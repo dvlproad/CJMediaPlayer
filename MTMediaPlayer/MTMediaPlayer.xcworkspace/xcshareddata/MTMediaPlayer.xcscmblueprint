@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8D2362B551FD18BAC5272901076E478D696B0EAA+++16A8CFA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D2362B551FD18BAC5272901076E478D696B0EAA+++16A8CFA" : 9223372036854775807,
+    "92A174BC97441CF51B046717FC591C3675E2096C+++8DA4DF2" : 9223372036854775807,
+    "92A174BC97441CF51B046717FC591C3675E2096C+++D42D0A9" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B8BF5FDD-2442-497D-B4B9-BB15457DAD54",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D2362B551FD18BAC5272901076E478D696B0EAA+++16A8CFA" : "CJMediaPlayer\/",
+    "92A174BC97441CF51B046717FC591C3675E2096C+++8DA4DF2" : "MTMediaPlayer\/",
+    "92A174BC97441CF51B046717FC591C3675E2096C+++D42D0A9" : "MTMediaPlayer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MTMediaPlayer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MTMediaPlayer\/MTMediaPlayer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dvlproad\/CJMediaPlayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D2362B551FD18BAC5272901076E478D696B0EAA+++16A8CFA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "techgit.meitu.com:iosmodules\/MTMediaPlayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92A174BC97441CF51B046717FC591C3675E2096C+++8DA4DF2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "techgit.meitu.com:iosmodules\/MTMediaPlayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92A174BC97441CF51B046717FC591C3675E2096C+++D42D0A9"
+    }
+  ]
+}

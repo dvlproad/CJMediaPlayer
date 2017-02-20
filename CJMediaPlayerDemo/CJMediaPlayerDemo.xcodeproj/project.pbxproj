@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7859D0371E5B5DFC00366FAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859D0361E5B5DFC00366FAC /* main.m */; };
+		7859D03A1E5B5DFC00366FAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859D0391E5B5DFC00366FAC /* AppDelegate.m */; };
+		7859D03D1E5B5DFC00366FAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859D03C1E5B5DFC00366FAC /* ViewController.m */; };
+		7859D0401E5B5DFC00366FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7859D03E1E5B5DFC00366FAC /* Main.storyboard */; };
+		7859D0421E5B5DFC00366FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7859D0411E5B5DFC00366FAC /* Assets.xcassets */; };
+		7859D0451E5B5DFC00366FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7859D0431E5B5DFC00366FAC /* LaunchScreen.storyboard */; };
+		7859D0501E5B5DFC00366FAC /* CJMediaPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859D04F1E5B5DFC00366FAC /* CJMediaPlayerDemoTests.m */; };
+		7859D05B1E5B5DFC00366FAC /* CJMediaPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859D05A1E5B5DFC00366FAC /* CJMediaPlayerDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7859D04C1E5B5DFC00366FAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7859D02A1E5B5DFC00366FAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7859D0311E5B5DFC00366FAC;
+			remoteInfo = CJMediaPlayerDemo;
+		};
+		7859D0571E5B5DFC00366FAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7859D02A1E5B5DFC00366FAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7859D0311E5B5DFC00366FAC;
+			remoteInfo = CJMediaPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7859D0321E5B5DFC00366FAC /* CJMediaPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJMediaPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7859D0361E5B5DFC00366FAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7859D0381E5B5DFC00366FAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7859D0391E5B5DFC00366FAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7859D03B1E5B5DFC00366FAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7859D03C1E5B5DFC00366FAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7859D03F1E5B5DFC00366FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7859D0411E5B5DFC00366FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7859D0441E5B5DFC00366FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7859D0461E5B5DFC00366FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7859D04B1E5B5DFC00366FAC /* CJMediaPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJMediaPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7859D04F1E5B5DFC00366FAC /* CJMediaPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJMediaPlayerDemoTests.m; sourceTree = "<group>"; };
+		7859D0511E5B5DFC00366FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7859D0561E5B5DFC00366FAC /* CJMediaPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJMediaPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7859D05A1E5B5DFC00366FAC /* CJMediaPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJMediaPlayerDemoUITests.m; sourceTree = "<group>"; };
+		7859D05C1E5B5DFC00366FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7859D02F1E5B5DFC00366FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7859D0481E5B5DFC00366FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7859D0531E5B5DFC00366FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7859D0291E5B5DFC00366FAC = {
+			isa = PBXGroup;
+			children = (
+				7859D0341E5B5DFC00366FAC /* CJMediaPlayerDemo */,
+				7859D04E1E5B5DFC00366FAC /* CJMediaPlayerDemoTests */,
+				7859D0591E5B5DFC00366FAC /* CJMediaPlayerDemoUITests */,
+				7859D0331E5B5DFC00366FAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7859D0331E5B5DFC00366FAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7859D0321E5B5DFC00366FAC /* CJMediaPlayerDemo.app */,
+				7859D04B1E5B5DFC00366FAC /* CJMediaPlayerDemoTests.xctest */,
+				7859D0561E5B5DFC00366FAC /* CJMediaPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7859D0341E5B5DFC00366FAC /* CJMediaPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7859D0381E5B5DFC00366FAC /* AppDelegate.h */,
+				7859D0391E5B5DFC00366FAC /* AppDelegate.m */,
+				7859D03B1E5B5DFC00366FAC /* ViewController.h */,
+				7859D03C1E5B5DFC00366FAC /* ViewController.m */,
+				7859D03E1E5B5DFC00366FAC /* Main.storyboard */,
+				7859D0411E5B5DFC00366FAC /* Assets.xcassets */,
+				7859D0431E5B5DFC00366FAC /* LaunchScreen.storyboard */,
+				7859D0461E5B5DFC00366FAC /* Info.plist */,
+				7859D0351E5B5DFC00366FAC /* Supporting Files */,
+			);
+			path = CJMediaPlayerDemo;
+			sourceTree = "<group>";
+		};
+		7859D0351E5B5DFC00366FAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7859D0361E5B5DFC00366FAC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7859D04E1E5B5DFC00366FAC /* CJMediaPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7859D04F1E5B5DFC00366FAC /* CJMediaPlayerDemoTests.m */,
+				7859D0511E5B5DFC00366FAC /* Info.plist */,
+			);
+			path = CJMediaPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		7859D0591E5B5DFC00366FAC /* CJMediaPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7859D05A1E5B5DFC00366FAC /* CJMediaPlayerDemoUITests.m */,
+				7859D05C1E5B5DFC00366FAC /* Info.plist */,
+			);
+			path = CJMediaPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7859D0311E5B5DFC00366FAC /* CJMediaPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7859D05F1E5B5DFC00366FAC /* Build configuration list for PBXNativeTarget "CJMediaPlayerDemo" */;
+			buildPhases = (
+				7859D02E1E5B5DFC00366FAC /* Sources */,
+				7859D02F1E5B5DFC00366FAC /* Frameworks */,
+				7859D0301E5B5DFC00366FAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CJMediaPlayerDemo;
+			productName = CJMediaPlayerDemo;
+			productReference = 7859D0321E5B5DFC00366FAC /* CJMediaPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7859D04A1E5B5DFC00366FAC /* CJMediaPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7859D0621E5B5DFC00366FAC /* Build configuration list for PBXNativeTarget "CJMediaPlayerDemoTests" */;
+			buildPhases = (
+				7859D0471E5B5DFC00366FAC /* Sources */,
+				7859D0481E5B5DFC00366FAC /* Frameworks */,
+				7859D0491E5B5DFC00366FAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7859D04D1E5B5DFC00366FAC /* PBXTargetDependency */,
+			);
+			name = CJMediaPlayerDemoTests;
+			productName = CJMediaPlayerDemoTests;
+			productReference = 7859D04B1E5B5DFC00366FAC /* CJMediaPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7859D0551E5B5DFC00366FAC /* CJMediaPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7859D0651E5B5DFC00366FAC /* Build configuration list for PBXNativeTarget "CJMediaPlayerDemoUITests" */;
+			buildPhases = (
+				7859D0521E5B5DFC00366FAC /* Sources */,
+				7859D0531E5B5DFC00366FAC /* Frameworks */,
+				7859D0541E5B5DFC00366FAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7859D0581E5B5DFC00366FAC /* PBXTargetDependency */,
+			);
+			name = CJMediaPlayerDemoUITests;
+			productName = CJMediaPlayerDemoUITests;
+			productReference = 7859D0561E5B5DFC00366FAC /* CJMediaPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7859D02A1E5B5DFC00366FAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = dvlproad;
+				TargetAttributes = {
+					7859D0311E5B5DFC00366FAC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					7859D04A1E5B5DFC00366FAC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7859D0311E5B5DFC00366FAC;
+					};
+					7859D0551E5B5DFC00366FAC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7859D0311E5B5DFC00366FAC;
+					};
+				};
+			};
+			buildConfigurationList = 7859D02D1E5B5DFC00366FAC /* Build configuration list for PBXProject "CJMediaPlayerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7859D0291E5B5DFC00366FAC;
+			productRefGroup = 7859D0331E5B5DFC00366FAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7859D0311E5B5DFC00366FAC /* CJMediaPlayerDemo */,
+				7859D04A1E5B5DFC00366FAC /* CJMediaPlayerDemoTests */,
+				7859D0551E5B5DFC00366FAC /* CJMediaPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7859D0301E5B5DFC00366FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7859D0451E5B5DFC00366FAC /* LaunchScreen.storyboard in Resources */,
+				7859D0421E5B5DFC00366FAC /* Assets.xcassets in Resources */,
+				7859D0401E5B5DFC00366FAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7859D0491E5B5DFC00366FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7859D0541E5B5DFC00366FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7859D02E1E5B5DFC00366FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7859D03D1E5B5DFC00366FAC /* ViewController.m in Sources */,
+				7859D03A1E5B5DFC00366FAC /* AppDelegate.m in Sources */,
+				7859D0371E5B5DFC00366FAC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7859D0471E5B5DFC00366FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7859D0501E5B5DFC00366FAC /* CJMediaPlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7859D0521E5B5DFC00366FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7859D05B1E5B5DFC00366FAC /* CJMediaPlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7859D04D1E5B5DFC00366FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7859D0311E5B5DFC00366FAC /* CJMediaPlayerDemo */;
+			targetProxy = 7859D04C1E5B5DFC00366FAC /* PBXContainerItemProxy */;
+		};
+		7859D0581E5B5DFC00366FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7859D0311E5B5DFC00366FAC /* CJMediaPlayerDemo */;
+			targetProxy = 7859D0571E5B5DFC00366FAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7859D03E1E5B5DFC00366FAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7859D03F1E5B5DFC00366FAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7859D0431E5B5DFC00366FAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7859D0441E5B5DFC00366FAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7859D05D1E5B5DFC00366FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7859D05E1E5B5DFC00366FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7859D0601E5B5DFC00366FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CJMediaPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJMediaPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7859D0611E5B5DFC00366FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CJMediaPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJMediaPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7859D0631E5B5DFC00366FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CJMediaPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJMediaPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJMediaPlayerDemo.app/CJMediaPlayerDemo";
+			};
+			name = Debug;
+		};
+		7859D0641E5B5DFC00366FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CJMediaPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJMediaPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CJMediaPlayerDemo.app/CJMediaPlayerDemo";
+			};
+			name = Release;
+		};
+		7859D0661E5B5DFC00366FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CJMediaPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJMediaPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CJMediaPlayerDemo;
+			};
+			name = Debug;
+		};
+		7859D0671E5B5DFC00366FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CJMediaPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJMediaPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CJMediaPlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7859D02D1E5B5DFC00366FAC /* Build configuration list for PBXProject "CJMediaPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7859D05D1E5B5DFC00366FAC /* Debug */,
+				7859D05E1E5B5DFC00366FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7859D05F1E5B5DFC00366FAC /* Build configuration list for PBXNativeTarget "CJMediaPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7859D0601E5B5DFC00366FAC /* Debug */,
+				7859D0611E5B5DFC00366FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7859D0621E5B5DFC00366FAC /* Build configuration list for PBXNativeTarget "CJMediaPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7859D0631E5B5DFC00366FAC /* Debug */,
+				7859D0641E5B5DFC00366FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7859D0651E5B5DFC00366FAC /* Build configuration list for PBXNativeTarget "CJMediaPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7859D0661E5B5DFC00366FAC /* Debug */,
+				7859D0671E5B5DFC00366FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7859D02A1E5B5DFC00366FAC /* Project object */;
+}
