@@ -53,7 +53,7 @@
             {
                 NSString *homeDirectory = NSHomeDirectory();
                 if ([localAbsolutePath hasPrefix:homeDirectory]) {
-                    localRelativePath = [localAbsolutePath substringFromIndex:homeDirectory.length];
+                    localRelativePath = [localAbsolutePath substringFromIndex:homeDirectory.length+1];
                 }
                 break;
             }
@@ -61,7 +61,7 @@
             {
                 NSString *homeDirectory = [[NSBundle mainBundle] bundlePath];
                 if ([localAbsolutePath hasPrefix:homeDirectory]) {
-                    localRelativePath = [localAbsolutePath substringFromIndex:homeDirectory.length];
+                    localRelativePath = [localAbsolutePath substringFromIndex:homeDirectory.length+1];
                 }
                 break;
             }
@@ -99,7 +99,7 @@
             NSString *homeDirectory = [[NSBundle mainBundle] bundlePath];
             NSString *localAbsolutePath = [homeDirectory stringByAppendingPathComponent:self.localRelativePath];
             
-            localAbsolutePath = [localAbsolutePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            //localAbsolutePath = [localAbsolutePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; //错误，不能执行此句，否则中文名字图片会错误
             absoluteURL = [NSURL fileURLWithPath:localAbsolutePath];   //fileURLWithPath
             break;
         }

@@ -11,7 +11,8 @@
 @implementation VideoModel
 
 - (UIImage *)image {
-    NSData *imageData = [NSData dataWithContentsOfURL:self.firstFrameImageFile.absoluteURL];//异步加载
+    NSURL *absoluteURL = self.firstFrameImageFile.absoluteURL;
+    NSData *imageData = [NSData dataWithContentsOfURL:absoluteURL];//异步加载
     if (imageData == nil) {
         NSLog(@"Error:视频预览图加载失败");
     }
