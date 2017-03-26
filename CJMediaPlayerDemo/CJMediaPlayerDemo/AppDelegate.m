@@ -1,15 +1,14 @@
 //
 //  AppDelegate.m
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by chacha on 3/7/16.
-//  Copyright © 2016 meitu. All rights reserved.
+//  Created by dvlproad on 16/3/21.
+//  Copyright © 2016年 dvlproad. All rights reserved.
+
 //
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-
-#import <MediaPlayer/MediaPlayer.h>
 
 @interface AppDelegate ()
 
@@ -20,20 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    [self setUpViewControllers];
-    
     return YES;
-}
-
-- (void)setUpViewControllers
-{
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    ViewController *rootVC = [[ViewController alloc] init];
-    self.window.rootViewController = rootVC;
-    [self.window makeKeyAndVisible];
-
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -1,17 +1,17 @@
 //
 //  CJPlayerView.m
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by lichq on 16/3/21.
+//  Created by dvlproad on 16/3/21.
 //  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import "CJPlayerView.h"
-#import <PureLayout.h>
-#import "CJPlayerMaskView.h"
+#import <PureLayout/PureLayout.h>
 
-@interface CJPlayerView ()<CJPlayerMaskViewDelegate>
-
+@interface CJPlayerView () <CJPlayerMaskViewDelegate> {
+    
+}
 @property (nonatomic, strong) CJPlayerMaskView *maskView;
 @property (nonatomic, strong) UIImageView *coverImageView; /**< 用于产生更好的播放效果 不要直接黑屏闪过去 */
 
@@ -61,16 +61,14 @@
 /** 完整的描述请参见文件头部 */
 - (void)hiddenCoverImageView {
     if (!self.coverImageView.hidden || self.coverImageView.alpha != 0) {
-        [UIView animateWithDuration:0.5
-                         animations:^{
-                             self.coverImageView.alpha = 0;
-                         }
-                         completion:^(BOOL finished) {
-                             // double check because we might call [reset] midway
-                             if (self.coverImageView.alpha == 0) {
-                                 self.coverImageView.hidden = YES;
-                             }
-                         }];
+        [UIView animateWithDuration:0.5 animations:^{
+            self.coverImageView.alpha = 0;
+        } completion:^(BOOL finished) {
+            // double check because we might call [reset] midway
+            if (self.coverImageView.alpha == 0) {
+                self.coverImageView.hidden = YES;
+            }
+        }];
     }
 }
 
@@ -123,32 +121,32 @@
 
 #pragma mark - CJPlayerMaskViewDelegate
 - (void)cjPlayerMaskView:(CJPlayerMaskView *)maskView fullScreenButtonClicked:(UIButton *)button {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(mpPlayerView:fullScreenButtonClicked:)]) {
-        [self.delegate mpPlayerView:self fullScreenButtonClicked:button];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cjPlayerView:fullScreenButtonClicked:)]) {
+        [self.delegate cjPlayerView:self fullScreenButtonClicked:button];
     }
 }
 
 - (void)cjPlayerMaskView:(CJPlayerMaskView *)maskView sliderValueChange:(CJPlayerSlider *)slider {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(mpPlayerView:sliderValueChange:)]) {
-        [self.delegate mpPlayerView:self sliderValueChange:slider];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cjPlayerView:sliderValueChange:)]) {
+        [self.delegate cjPlayerView:self sliderValueChange:slider];
     }
 }
 
 - (void)cjPlayerMaskView:(CJPlayerMaskView *)maskView sliderTouchBegan:(CJPlayerSlider *)slider {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(mpPlayerView:sliderTouchBegan:)]) {
-        [self.delegate mpPlayerView:self sliderTouchBegan:slider];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cjPlayerView:sliderTouchBegan:)]) {
+        [self.delegate cjPlayerView:self sliderTouchBegan:slider];
     }
 }
 
 - (void)cjPlayerMaskView:(CJPlayerMaskView *)maskView sliderTouchEnd:(CJPlayerSlider *)slider {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(mpPlayerView:sliderTouchEnd:)]) {
-        [self.delegate mpPlayerView:self sliderTouchEnd:slider];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cjPlayerView:sliderTouchEnd:)]) {
+        [self.delegate cjPlayerView:self sliderTouchEnd:slider];
     }
 }
 
 - (void)cjPlayerMaskView:(CJPlayerMaskView *)maskView touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(mpPlayerView:touchesBegan:withEvent:)]){
-        [self.delegate mpPlayerView:self touchesBegan:touches withEvent:event];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cjPlayerView:touchesBegan:withEvent:)]){
+        [self.delegate cjPlayerView:self touchesBegan:touches withEvent:event];
     }
 }
 

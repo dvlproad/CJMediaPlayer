@@ -1,15 +1,14 @@
 //
 //  CJPlayerProgressBar.m
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by lichq on 16/3/21.
+//  Created by dvlproad on 16/3/21.
 //  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import "CJPlayerProgressView.h"
 
-#import <PureLayout.h>
-#import "HexColor.h"
+#import <PureLayout/PureLayout.h>
 
 @interface CJPlayerProgressView () {
     
@@ -34,8 +33,8 @@
         [self addSubview:_startTimeLabel];
         
         _playerSlider = [[CJPlayerSlider alloc] initWithFrame:CGRectZero];
-        _playerSlider.enableTip = NO;
-        _playerSlider.minimumTrackTintColor = [UIColor colorWithHexString:@"ff4b51"];
+        _playerSlider.enableTip = YES;
+        _playerSlider.minimumTrackTintColor = [UIColor colorWithRed:255/255.0 green:75/255.0 blue:81/255.0 alpha:1];//red:FF4B51
         [self addSubview:_playerSlider];
         
         _totalTimeLabel = [[UILabel alloc] initWithFrame:CGRectZero];

@@ -1,15 +1,15 @@
 //
 //  CJPlayerMaskView.h
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by lichq on 16/3/21.
+//  Created by dvlproad on 16/3/21.
 //  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 #import "CJPlayerProgressView.h"
-#import "MPLoadingProgressView.h"
+#import "CJLoadingProgressView.h"
 
 
 /**
@@ -81,7 +81,7 @@ static const CGFloat s_kProgressViewHideTime = 5.0f;
 @property (nonatomic, assign) id <CJPlayerMaskViewDelegate> delegate;
 
 @property (nonatomic, strong) UIImageView *playImageView; /**< 播放按钮，若没有设置则使用默认图片 */
-@property (nonatomic, strong) MPLoadingProgressView *loadingView; /**< 加载视图 */
+@property (nonatomic, strong) CJLoadingProgressView *loadingView; /**< 加载视图 */
 @property (nonatomic, strong) UIButton *fullScreenButton; /**< 全屏按钮，若没有设置则使用默认图片 */
 @property (nonatomic, strong) CJPlayerProgressView *playerProgressView; /**< 底部进度控制 */
 

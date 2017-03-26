@@ -1,8 +1,8 @@
 //
 //  CJPlayerMaskView.m
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by lichq on 16/3/21.
+//  Created by dvlproad on 16/3/21.
 //  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
@@ -31,7 +31,7 @@
         _playImageView.translatesAutoresizingMaskIntoConstraints = NO;
         [_playImageView autoCenterInSuperview];
         
-        _loadingView = [[MPLoadingProgressView alloc] init];
+        _loadingView = [[CJLoadingProgressView alloc] init];
         _loadingView.hidden = YES;
         [self addSubview:_loadingView];
         _loadingView.translatesAutoresizingMaskIntoConstraints = NO;

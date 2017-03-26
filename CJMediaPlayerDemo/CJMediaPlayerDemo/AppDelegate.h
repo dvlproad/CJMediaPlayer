@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by chacha on 3/7/16.
-//  Copyright © 2016 meitu. All rights reserved.
+//  Created by dvlproad on 16/3/21.
+//  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

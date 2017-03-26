@@ -1,13 +1,13 @@
 //
 //  CJPlayerProgressView.h
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by lichq on 16/3/21.
+//  Created by dvlproad on 16/3/21.
 //  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "CJPlayerSlider.h"
+#import <CJBaseUIKit/CJPlayerSlider.h>
 
 @interface CJPlayerProgressView : UIView {
     

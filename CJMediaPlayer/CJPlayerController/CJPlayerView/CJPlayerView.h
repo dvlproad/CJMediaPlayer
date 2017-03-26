@@ -1,17 +1,15 @@
 //
 //  CJPlayerView.h
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by lichq on 16/3/21.
+//  Created by dvlproad on 16/3/21.
 //  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "MTVideoView.h"
 #import "CJPlayerMaskView.h"
 
 @class CJPlayerView;
-
 @protocol CJPlayerViewDelegate <NSObject>
 
 /**
@@ -20,7 +18,7 @@
  *  @param playerView The maskView requesting this information.
  *  @param slider   The slider which value change.
  */
-- (void)mpPlayerView:(CJPlayerView *)playerView sliderValueChange:(CJPlayerSlider *)slider;
+- (void)cjPlayerView:(CJPlayerView *)playerView sliderValueChange:(CJPlayerSlider *)slider;
 
 /**
  *  slider开始Touch
@@ -28,7 +26,7 @@
  *  @param playerView The maskView requesting this information.
  *  @param slider   The slider which be touched.
  */
-- (void)mpPlayerView:(CJPlayerView *)playerView sliderTouchBegan:(CJPlayerSlider *)slider;
+- (void)cjPlayerView:(CJPlayerView *)playerView sliderTouchBegan:(CJPlayerSlider *)slider;
 
 /**
  *  slider结束Touch
@@ -36,7 +34,7 @@
  *  @param playerView The maskView requesting this information.
  *  @param slider   The slider which be touched.
  */
-- (void)mpPlayerView:(CJPlayerView *)playerView sliderTouchEnd:(CJPlayerSlider *)slider;
+- (void)cjPlayerView:(CJPlayerView *)playerView sliderTouchEnd:(CJPlayerSlider *)slider;
 
 /**
  *  全屏按钮点击
@@ -45,7 +43,7 @@
  *  @param button 按钮
  */
 
-- (void)mpPlayerView:(CJPlayerView *)playerView fullScreenButtonClicked:(UIButton *)button;
+- (void)cjPlayerView:(CJPlayerView *)playerView fullScreenButtonClicked:(UIButton *)button;
 
 /**
  *  CJPlayerMaskView Touch事件
@@ -54,7 +52,7 @@
  *  @param touches  A set of UITouch instances that represent the touches for the starting phase of the event represented by event.
  *  @param event    An object representing the event to which the touches belong.
  */
-- (void)mpPlayerView:(CJPlayerView *)playerView touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
+- (void)cjPlayerView:(CJPlayerView *)playerView touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event;
 
 @end
 

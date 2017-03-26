@@ -1,24 +1,25 @@
 //
 //  ViewController.m
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by chacha on 3/7/16.
-//  Copyright © 2016 meitu. All rights reserved.
+//  Created by dvlproad on 16/3/21.
+//  Copyright © 2016年 dvlproad. All rights reserved.
 //
-
-#import "PureLayout.h"
 
 #import "ViewController.h"
-#import "VideoViewController.h"
-#import "VideoListController.h"
-#import "DemoNavigationController.h"
 
-//#import "MPMediaPlayer.h"
+#import <PureLayout/PureLayout.h>
+#import "VideoViewController.h"
+#import "VideoListViewController.h"
+#import "DemoNavigationController.h"
+#import "VideoArrayViewController.h"
+#import "avplayerVC.h"
+//#import "CJMediaPlayer.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) UIButton *buttonVideo;
-//@property (nonatomic, strong) MPMediaPlayer *mediaPlayer;
+//@property (nonatomic, strong) CJMediaPlayer *mediaPlayer;
 
 @end
 
@@ -27,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = NSLocalizedString(@"首页", nil);
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.buttonVideo = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -46,8 +48,8 @@
 //    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 164, 150, 200)];
 //    view.backgroundColor = [UIColor greenColor];
 //    [self.view addSubview:view];
-//    self.mediaPlayer = [[MPMediaPlayer alloc]init];
-//    self.mediaPlayer.url = [NSURL URLWithString:@"https://mvvideo5.meitudata.com/56de8739217626422.mp4"];
+//    self.mediaPlayer = [[CJMediaPlayer alloc]init];
+//    self.mediaPlayer.url = [NSURL URLWithString:@"http://tb-video.bdstatic.com/tieba-smallvideo/86_671b0a2e1eab73e48eb3aafcbae5dcaa.mp4"];
 //    [self.mediaPlayer.videoView setFrame:CGRectMake(0, 0, 150, 200)];
 //    [view addSubview:self.mediaPlayer.videoView];
 //    [self.mediaPlayer play];
@@ -66,9 +68,19 @@
 }
 
 - (void)jumpToTableView:(UIButton *)sender {
-    VideoListController *listVC = [[VideoListController alloc] init];
+    VideoListViewController *listVC = [[VideoListViewController alloc] initWithNibName:@"VideoListViewController" bundle:nil];
     DemoNavigationController *containerVC = [[DemoNavigationController alloc] initWithRootViewController:listVC];
     [self presentViewController:containerVC animated:YES completion:nil];
 }
+
+- (IBAction)goVideoArrayViewController:(id)sender {
+//    VideoArrayViewController *viewController = [[VideoArrayViewController alloc] init];
+//    [self.navigationController pushViewController:viewController animated:YES];
+    
+    avplayerVC *vc = [[avplayerVC alloc] init];
+    [self presentViewController:vc animated:NO completion:nil];
+}
+
+
 
 @end

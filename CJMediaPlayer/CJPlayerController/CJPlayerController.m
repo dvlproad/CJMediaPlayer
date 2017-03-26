@@ -1,30 +1,25 @@
 //
 //  CJPlayerController.m
-//  MTMediaPlayer
+//  CJMediaPlayerDemo
 //
-//  Created by lichq on 16/3/21.
+//  Created by dvlproad on 16/3/21.
 //  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import "CJPlayerController.h"
 
-#import "PureLayout.h"
-
-#import "FrameAccessor.h"
-
-#import "PlayerUtilsMacro.h"
 #import "CJPlayerViewController.h"
-#import "MPMediaPlayer.h"
+#import "CJMediaPlayer.h"
 #import "CJPlayerSlider.h"
-#import "MPPlayerManager.h"
+#import "CJPlayerManager.h"
 //#import "MTPlayerNetwork.h"
 
-@interface CJPlayerController () <CJPlayerViewDelegate, MPPlayerManagerDelegate>
-
+@interface CJPlayerController () <CJPlayerViewDelegate, CJPlayerManagerDelegate> {
+    
+}
 @property (nonatomic, assign, getter = isSliderDragging) BOOL sliderDragging;
-
-@property (nonatomic, strong) MPPlayerManager *manager;
-@property (nonatomic, assign) MPMediaPlayerStatus lastStatusOnWindow;
+@property (nonatomic, strong) CJPlayerManager *manager;
+@property (nonatomic, assign) CJMediaPlayerStatus lastStatusOnWindow;
 
 @property (nonatomic, strong) UIViewController *currentFullscreenViewController;
 
@@ -41,7 +36,7 @@
 }
 
 - (void)commonInit {
-    _manager = [MPPlayerManager sharePlayerManager];
+    _manager = [CJPlayerManager sharePlayerManager];
     
     _view = [[CJPlayerView alloc] initWithPlayerView:_manager.videoView];
     _view.delegate = self;
@@ -57,7 +52,7 @@
         self.lastStatusOnWindow = self.manager.status;
         [self.manager pause];
     } else {
-        if (self.lastStatusOnWindow == MPMediaPlayerStatusPlaying) {
+        if (self.lastStatusOnWindow == CJMediaPlayerStatusPlaying) {
             [self.manager play];
         }
     }
@@ -65,24 +60,19 @@
 
 
 #pragma mark - set url
-/**
- * 当初始化时没有传入URL时，可以使用此接口传入
- *@param: URL 需要播放的URL
- *@param: needCache 是否需要缓存
- *@param: maskType
- */
-- (void)setURL:(NSURL *)URL
-    coverImage:(UIImage *)coverImage
-     needCache:(BOOL)needCache
-      maskType:(CJPlayerMaskViewType)maskType {
-    
-    [self setFullScreen:NO Animated:YES completion:nil];
+/** 完整的描述请参见文件头部 */
+- (void)setVideoURL:(NSURL *)videoURL
+         coverImage:(UIImage *)coverImage
+          needCache:(BOOL)needCache
+           maskType:(CJPlayerMaskViewType)maskType
+{
+    [self setFullScreen:NO animated:YES completion:nil];
     [self.view resetPlayerViewWithMaskViewType:maskType coverImage:coverImage];
     
-    [[MPPlayerManager sharePlayerManager] setPlayIdentify:nil
-                                                  playURL:URL
+    [[CJPlayerManager sharePlayerManager] setPlayIdentify:nil
+                                                  playURL:videoURL
                                                 needCache:needCache
-                                                  preload:[URL absoluteString]
+                                                  preload:[videoURL absoluteString]
                                                  delegate:self];
 }
 
@@ -91,9 +81,9 @@
  *
  *  @param full       是否需要全屏播放
  *  @param animated   是都添加展开全屏动画
- *  @param completion
+ *  @param completion 设置完成后执行的内容
  */
-- (void)setFullScreen:(BOOL)full Animated:(BOOL)animated completion:(void (^)(void))completion {
+- (void)setFullScreen:(BOOL)full animated:(BOOL)animated completion:(void (^)(void))completion {
     if (self.fullscreen == full) {
         return;
     }
@@ -146,19 +136,19 @@
 }
 
 
-#pragma mark - MPPlayerManagerDelegate
+#pragma mark - CJPlayerManagerDelegate
 /**
  *  播放状态改变回调
  *
  *  @param playerManager 播放管理器
  *  @param status        播放状态
  */
-- (void)playerManager:(MPPlayerManager *)playerManager statusDidChanged:(MPMediaPlayerStatus)status {
-    MTPlayerLog(@"%d", (int)status);
+- (void)playerManager:(CJPlayerManager *)playerManager statusDidChanged:(CJMediaPlayerStatus)status {
+    NSLog(@"playerManagerStatus = %d", (int)status);
     // 调整loading view状态
     [self showLoadingAnimationView:status];
     // 调整cover 状态
-    if (status == MPMediaPlayerStatusPlaying) {
+    if (status == CJMediaPlayerStatusPlaying) {
         [self.view hiddenCoverImageView];
     }
 }
@@ -169,8 +159,8 @@
  *  @param playerManager 播放管理器
  *  @param time          时间
  */
-- (void)playerManager:(MPPlayerManager *)playerManager progressDidChange:(CGFloat)progress {
-    NSTimeInterval totalTime = [[MPMediaPlayer shared] duration];
+- (void)playerManager:(CJPlayerManager *)playerManager progressDidChange:(CGFloat)progress {
+    NSTimeInterval totalTime = [[CJMediaPlayer shared] duration];
     [self.view updateCurrentTime:(NSInteger)(totalTime * progress)];
     [self.view updateTotalTime:(NSInteger)totalTime];
     
@@ -185,45 +175,45 @@
  *  @param playerManager 播放管理器
  *  @param restoreDic    播放视图状态数据(out)
  */
-- (void)playerManager:(MPPlayerManager *)playerManager saveRestoreDic:(NSMutableDictionary *)restoreDic {
+- (void)playerManager:(CJPlayerManager *)playerManager saveRestoreDic:(NSMutableDictionary *)restoreDic {
     
 }
 
 /**
  *  播放状态出错
  */
-- (void)playerManager:(MPPlayerManager *)playerManager loadFailed:(NSError *)error {
+- (void)playerManager:(CJPlayerManager *)playerManager loadFailed:(NSError *)error {
     
 }
 
 
 #pragma mark  MPPlayerViewDelegate
-- (void)mpPlayerView:(CJPlayerView *)playerView sliderValueChange:(CJPlayerSlider *)slider {
+- (void)cjPlayerView:(CJPlayerView *)playerView sliderValueChange:(CJPlayerSlider *)slider {
     self.sliderDragging = YES;
     
     [self updateUIWithSeekForPercent:slider.value completion:NULL];
 }
 
-- (void)mpPlayerView:(CJPlayerView *)playerView sliderTouchBegan:(CJPlayerSlider *)slider {
+- (void)cjPlayerView:(CJPlayerView *)playerView sliderTouchBegan:(CJPlayerSlider *)slider {
     self.sliderDragging = YES;
     
     [self.manager willStartSeek];
 }
 
-- (void)mpPlayerView:(CJPlayerView *)playerView sliderTouchEnd:(CJPlayerSlider *)slider {
+- (void)cjPlayerView:(CJPlayerView *)playerView sliderTouchEnd:(CJPlayerSlider *)slider {
     self.sliderDragging = NO;
     
     [self.manager didEndSeek];
-    if (self.manager.status == MPMediaPlayerStatusLoading) {
-        [self showLoadingAnimationView:MPMediaPlayerStatusLoading];
+    if (self.manager.status == CJMediaPlayerStatusLoading) {
+        [self showLoadingAnimationView:CJMediaPlayerStatusLoading];
     }
 }
 
-- (void)mpPlayerView:(CJPlayerView *)playerView fullScreenButtonClicked:(UIButton *)button {
-    [self setFullScreen:!self.fullscreen Animated:YES completion:nil];
+- (void)cjPlayerView:(CJPlayerView *)playerView fullScreenButtonClicked:(UIButton *)button {
+    [self setFullScreen:!self.fullscreen animated:YES completion:nil];
 }
 
-- (void)mpPlayerView:(CJPlayerView *)playerView touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)cjPlayerView:(CJPlayerView *)playerView touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     // 播放时, 从隐藏状态展开进度条不会停止播放
     BOOL progressViewToogled = NO;
     if ([self.view isHiddenBottomView]) {
@@ -231,8 +221,8 @@
         progressViewToogled = YES;
     }
     
-    MPMediaPlayer *player = [MPMediaPlayer shared];
-    if (player.status == MPMediaPlayerStatusPlaying) {
+    CJMediaPlayer *player = [CJMediaPlayer shared];
+    if (player.status == CJMediaPlayerStatusPlaying) {
         if (progressViewToogled) {
             return;
         }
@@ -248,10 +238,10 @@
 /**
  * 播放器加载视图的显隐
  */
-- (void)showLoadingAnimationView:(MPMediaPlayerStatus)status{
-    //BOOL bValue = MPMediaPlayerStatusLoading == status && !self.sliderDragging;
-    //NSLog(@"showLoading ? %@, StatusLoading = %@, sliderDragging = %@", bValue ? @"YES":@"NO", MPMediaPlayerStatusLoading == status?@"YES":@"NO", self.sliderDragging ? @"YES":@"NO");
-    if (MPMediaPlayerStatusLoading == status && !self.sliderDragging) {
+- (void)showLoadingAnimationView:(CJMediaPlayerStatus)status{
+    //BOOL bValue = CJMediaPlayerStatusLoading == status && !self.sliderDragging;
+    //NSLog(@"showLoading ? %@, StatusLoading = %@, sliderDragging = %@", bValue ? @"YES":@"NO", CJMediaPlayerStatusLoading == status?@"YES":@"NO", self.sliderDragging ? @"YES":@"NO");
+    if (CJMediaPlayerStatusLoading == status && !self.sliderDragging) {
         [self.view setLoadingImageViewStatus:YES];
         
         // TODO 播放器提示,等播放器状态搞完后再改这块
@@ -296,7 +286,7 @@
 }
 
 - (void)updateUIWithSeekForPercent:(float)percent completion:(void (^)(BOOL finished))completion {
-    NSTimeInterval totalTime = [[MPMediaPlayer shared] duration];
+    NSTimeInterval totalTime = [[CJMediaPlayer shared] duration];
     [self.view updateCurrentTime:(NSInteger)(totalTime * percent)];
     
     [self.manager seekToPercent:percent completion:completion];

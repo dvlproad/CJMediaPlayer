@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6451DF421CA51374009DFF58 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6451DF391CA51374009DFF58 /* VideoModel.m */; };
+		6451DF431CA51374009DFF58 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6451DF3B1CA51374009DFF58 /* VideoTableViewCell.m */; };
+		6451DF441CA51374009DFF58 /* VideoArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6451DF3D1CA51374009DFF58 /* VideoArrayViewController.m */; };
+		64F6B0B81C99C9CF002DE053 /* TBPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F6B0B71C99C9CF002DE053 /* TBPlayerTests.m */; };
+		78FB793A1E851044007B7120 /* MTAVPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB792A1E851044007B7120 /* MTAVPlayerController.m */; };
+		78FB793B1E851044007B7120 /* MTAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB792C1E851044007B7120 /* MTAVPlayerView.m */; };
+		78FB793C1E851044007B7120 /* testPlayIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78FB792D1E851044007B7120 /* testPlayIcon.jpg */; };
+		78FB793D1E851044007B7120 /* testPoster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78FB792E1E851044007B7120 /* testPoster.jpg */; };
+		78FB793E1E851044007B7120 /* avplayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79311E851044007B7120 /* avplayerVC.m */; };
+		78FB793F1E851044007B7120 /* TBloaderURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79331E851044007B7120 /* TBloaderURLConnection.m */; };
+		78FB79401E851044007B7120 /* TBPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79351E851044007B7120 /* TBPlayer.m */; };
+		78FB79411E851044007B7120 /* TBVideoRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79371E851044007B7120 /* TBVideoRequestTask.m */; };
+		78FB79421E851044007B7120 /* XCHudHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79391E851044007B7120 /* XCHudHelper.m */; };
+		78FB79581E852A1E007B7120 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78FB79551E852A1E007B7120 /* MBProgressHUD.bundle */; };
+		78FB79591E852A1E007B7120 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79571E852A1E007B7120 /* MBProgressHUD.m */; };
+		78FB796C1E852A39007B7120 /* MTAVResourceCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB795D1E852A39007B7120 /* MTAVResourceCache.m */; };
+		78FB796D1E852A39007B7120 /* MTAVResourceDataBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB795F1E852A39007B7120 /* MTAVResourceDataBlock.m */; };
+		78FB796E1E852A39007B7120 /* MTAVResourceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79611E852A39007B7120 /* MTAVResourceInfo.m */; };
+		78FB796F1E852A39007B7120 /* MTAVResourceLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79641E852A39007B7120 /* MTAVResourceLoaderManager.m */; };
+		78FB79701E852A39007B7120 /* MTAVUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79661E852A39007B7120 /* MTAVUtil.m */; };
+		78FB79711E852A39007B7120 /* MTAVResourceLoaderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79691E852A39007B7120 /* MTAVResourceLoaderTask.m */; };
+		78FB79721E852A39007B7120 /* MTAVResourceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB796B1E852A39007B7120 /* MTAVResourceRequest.m */; };
+		C26C5D901C5DE4A900BAD17A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C26C5D8F1C5DE4A900BAD17A /* main.m */; };
+		C26C5D931C5DE4A900BAD17A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C26C5D921C5DE4A900BAD17A /* AppDelegate.m */; };
+		C26C5D961C5DE4A900BAD17A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C26C5D951C5DE4A900BAD17A /* ViewController.m */; };
+		C26C5D991C5DE4A900BAD17A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26C5D971C5DE4A900BAD17A /* Main.storyboard */; };
+		C26C5D9B1C5DE4A900BAD17A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26C5D9A1C5DE4A900BAD17A /* Assets.xcassets */; };
+		C26C5D9E1C5DE4A900BAD17A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26C5D9C1C5DE4A900BAD17A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64F6B0BA1C99C9CF002DE053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C26C5D831C5DE4A900BAD17A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C26C5D8A1C5DE4A900BAD17A;
+			remoteInfo = TBPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6451DF381CA51374009DFF58 /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		6451DF391CA51374009DFF58 /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		6451DF3A1CA51374009DFF58 /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTableViewCell.h; sourceTree = "<group>"; };
+		6451DF3B1CA51374009DFF58 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
+		6451DF3C1CA51374009DFF58 /* VideoArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoArrayViewController.h; sourceTree = "<group>"; };
+		6451DF3D1CA51374009DFF58 /* VideoArrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoArrayViewController.m; sourceTree = "<group>"; };
+		64F6B0B51C99C9CF002DE053 /* TBPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64F6B0B71C99C9CF002DE053 /* TBPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBPlayerTests.m; sourceTree = "<group>"; };
+		64F6B0B91C99C9CF002DE053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78FB79291E851044007B7120 /* MTAVPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVPlayerController.h; sourceTree = "<group>"; };
+		78FB792A1E851044007B7120 /* MTAVPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVPlayerController.m; sourceTree = "<group>"; };
+		78FB792B1E851044007B7120 /* MTAVPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVPlayerView.h; sourceTree = "<group>"; };
+		78FB792C1E851044007B7120 /* MTAVPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVPlayerView.m; sourceTree = "<group>"; };
+		78FB792D1E851044007B7120 /* testPlayIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testPlayIcon.jpg; sourceTree = "<group>"; };
+		78FB792E1E851044007B7120 /* testPoster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testPoster.jpg; sourceTree = "<group>"; };
+		78FB79301E851044007B7120 /* avplayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avplayerVC.h; sourceTree = "<group>"; };
+		78FB79311E851044007B7120 /* avplayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = avplayerVC.m; sourceTree = "<group>"; };
+		78FB79321E851044007B7120 /* TBloaderURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBloaderURLConnection.h; sourceTree = "<group>"; };
+		78FB79331E851044007B7120 /* TBloaderURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBloaderURLConnection.m; sourceTree = "<group>"; };
+		78FB79341E851044007B7120 /* TBPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBPlayer.h; sourceTree = "<group>"; };
+		78FB79351E851044007B7120 /* TBPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBPlayer.m; sourceTree = "<group>"; };
+		78FB79361E851044007B7120 /* TBVideoRequestTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVideoRequestTask.h; sourceTree = "<group>"; };
+		78FB79371E851044007B7120 /* TBVideoRequestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVideoRequestTask.m; sourceTree = "<group>"; };
+		78FB79381E851044007B7120 /* XCHudHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCHudHelper.h; sourceTree = "<group>"; };
+		78FB79391E851044007B7120 /* XCHudHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCHudHelper.m; sourceTree = "<group>"; };
+		78FB79551E852A1E007B7120 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		78FB79561E852A1E007B7120 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		78FB79571E852A1E007B7120 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		78FB795C1E852A39007B7120 /* MTAVResourceCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVResourceCache.h; sourceTree = "<group>"; };
+		78FB795D1E852A39007B7120 /* MTAVResourceCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVResourceCache.m; sourceTree = "<group>"; };
+		78FB795E1E852A39007B7120 /* MTAVResourceDataBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVResourceDataBlock.h; sourceTree = "<group>"; };
+		78FB795F1E852A39007B7120 /* MTAVResourceDataBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVResourceDataBlock.m; sourceTree = "<group>"; };
+		78FB79601E852A39007B7120 /* MTAVResourceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVResourceInfo.h; sourceTree = "<group>"; };
+		78FB79611E852A39007B7120 /* MTAVResourceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVResourceInfo.m; sourceTree = "<group>"; };
+		78FB79621E852A39007B7120 /* MTAVCacheKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVCacheKit.h; sourceTree = "<group>"; };
+		78FB79631E852A39007B7120 /* MTAVResourceLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVResourceLoaderManager.h; sourceTree = "<group>"; };
+		78FB79641E852A39007B7120 /* MTAVResourceLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVResourceLoaderManager.m; sourceTree = "<group>"; };
+		78FB79651E852A39007B7120 /* MTAVUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVUtil.h; sourceTree = "<group>"; };
+		78FB79661E852A39007B7120 /* MTAVUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVUtil.m; sourceTree = "<group>"; };
+		78FB79681E852A39007B7120 /* MTAVResourceLoaderTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVResourceLoaderTask.h; sourceTree = "<group>"; };
+		78FB79691E852A39007B7120 /* MTAVResourceLoaderTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVResourceLoaderTask.m; sourceTree = "<group>"; };
+		78FB796A1E852A39007B7120 /* MTAVResourceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVResourceRequest.h; sourceTree = "<group>"; };
+		78FB796B1E852A39007B7120 /* MTAVResourceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVResourceRequest.m; sourceTree = "<group>"; };
+		C26C5D8B1C5DE4A900BAD17A /* TBPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26C5D8F1C5DE4A900BAD17A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C26C5D911C5DE4A900BAD17A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C26C5D921C5DE4A900BAD17A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C26C5D941C5DE4A900BAD17A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C26C5D951C5DE4A900BAD17A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C26C5D981C5DE4A900BAD17A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C26C5D9A1C5DE4A900BAD17A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C26C5D9D1C5DE4A900BAD17A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C26C5D9F1C5DE4A900BAD17A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64F6B0B21C99C9CF002DE053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26C5D881C5DE4A900BAD17A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6451DF301CA51374009DFF58 /* MTVideoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6451DF381CA51374009DFF58 /* VideoModel.h */,
+				6451DF391CA51374009DFF58 /* VideoModel.m */,
+				6451DF3A1CA51374009DFF58 /* VideoTableViewCell.h */,
+				6451DF3B1CA51374009DFF58 /* VideoTableViewCell.m */,
+				6451DF3C1CA51374009DFF58 /* VideoArrayViewController.h */,
+				6451DF3D1CA51374009DFF58 /* VideoArrayViewController.m */,
+			);
+			path = MTVideoDemo;
+			sourceTree = "<group>";
+		};
+		64F6B0B61C99C9CF002DE053 /* TBPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				64F6B0B71C99C9CF002DE053 /* TBPlayerTests.m */,
+				64F6B0B91C99C9CF002DE053 /* Info.plist */,
+			);
+			path = TBPlayerTests;
+			sourceTree = "<group>";
+		};
+		78FB79281E851044007B7120 /* MTPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				78FB79291E851044007B7120 /* MTAVPlayerController.h */,
+				78FB792A1E851044007B7120 /* MTAVPlayerController.m */,
+				78FB792B1E851044007B7120 /* MTAVPlayerView.h */,
+				78FB792C1E851044007B7120 /* MTAVPlayerView.m */,
+				78FB792D1E851044007B7120 /* testPlayIcon.jpg */,
+				78FB792E1E851044007B7120 /* testPoster.jpg */,
+			);
+			name = MTPlayer;
+			path = ../../MTPlayer;
+			sourceTree = "<group>";
+		};
+		78FB792F1E851044007B7120 /* TBPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				78FB79301E851044007B7120 /* avplayerVC.h */,
+				78FB79311E851044007B7120 /* avplayerVC.m */,
+				78FB79321E851044007B7120 /* TBloaderURLConnection.h */,
+				78FB79331E851044007B7120 /* TBloaderURLConnection.m */,
+				78FB79341E851044007B7120 /* TBPlayer.h */,
+				78FB79351E851044007B7120 /* TBPlayer.m */,
+				78FB79361E851044007B7120 /* TBVideoRequestTask.h */,
+				78FB79371E851044007B7120 /* TBVideoRequestTask.m */,
+				78FB79381E851044007B7120 /* XCHudHelper.h */,
+				78FB79391E851044007B7120 /* XCHudHelper.m */,
+			);
+			name = TBPlayer;
+			path = ../../TBPlayer;
+			sourceTree = "<group>";
+		};
+		78FB795A1E852A39007B7120 /* CJMediaCacheKit */ = {
+			isa = PBXGroup;
+			children = (
+				78FB795B1E852A39007B7120 /* Cache */,
+				78FB79621E852A39007B7120 /* MTAVCacheKit.h */,
+				78FB79631E852A39007B7120 /* MTAVResourceLoaderManager.h */,
+				78FB79641E852A39007B7120 /* MTAVResourceLoaderManager.m */,
+				78FB79651E852A39007B7120 /* MTAVUtil.h */,
+				78FB79661E852A39007B7120 /* MTAVUtil.m */,
+				78FB79671E852A39007B7120 /* ResourceLoad */,
+			);
+			name = CJMediaCacheKit;
+			path = ../../CJMediaCacheKit;
+			sourceTree = "<group>";
+		};
+		78FB795B1E852A39007B7120 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				78FB795C1E852A39007B7120 /* MTAVResourceCache.h */,
+				78FB795D1E852A39007B7120 /* MTAVResourceCache.m */,
+				78FB795E1E852A39007B7120 /* MTAVResourceDataBlock.h */,
+				78FB795F1E852A39007B7120 /* MTAVResourceDataBlock.m */,
+				78FB79601E852A39007B7120 /* MTAVResourceInfo.h */,
+				78FB79611E852A39007B7120 /* MTAVResourceInfo.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		78FB79671E852A39007B7120 /* ResourceLoad */ = {
+			isa = PBXGroup;
+			children = (
+				78FB79681E852A39007B7120 /* MTAVResourceLoaderTask.h */,
+				78FB79691E852A39007B7120 /* MTAVResourceLoaderTask.m */,
+				78FB796A1E852A39007B7120 /* MTAVResourceRequest.h */,
+				78FB796B1E852A39007B7120 /* MTAVResourceRequest.m */,
+			);
+			path = ResourceLoad;
+			sourceTree = "<group>";
+		};
+		C26C5D821C5DE4A900BAD17A = {
+			isa = PBXGroup;
+			children = (
+				C26C5D8D1C5DE4A900BAD17A /* TBPlayer */,
+				64F6B0B61C99C9CF002DE053 /* TBPlayerTests */,
+				C26C5D8C1C5DE4A900BAD17A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C26C5D8C1C5DE4A900BAD17A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C26C5D8B1C5DE4A900BAD17A /* TBPlayer.app */,
+				64F6B0B51C99C9CF002DE053 /* TBPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26C5D8D1C5DE4A900BAD17A /* TBPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C26C5D911C5DE4A900BAD17A /* AppDelegate.h */,
+				78FB79551E852A1E007B7120 /* MBProgressHUD.bundle */,
+				78FB79561E852A1E007B7120 /* MBProgressHUD.h */,
+				78FB79571E852A1E007B7120 /* MBProgressHUD.m */,
+				78FB795A1E852A39007B7120 /* CJMediaCacheKit */,
+				78FB79281E851044007B7120 /* MTPlayer */,
+				78FB792F1E851044007B7120 /* TBPlayer */,
+				C26C5D921C5DE4A900BAD17A /* AppDelegate.m */,
+				C26C5D941C5DE4A900BAD17A /* ViewController.h */,
+				C26C5D951C5DE4A900BAD17A /* ViewController.m */,
+				6451DF301CA51374009DFF58 /* MTVideoDemo */,
+				C26C5D971C5DE4A900BAD17A /* Main.storyboard */,
+				C26C5D9A1C5DE4A900BAD17A /* Assets.xcassets */,
+				C26C5D9C1C5DE4A900BAD17A /* LaunchScreen.storyboard */,
+				C26C5D9F1C5DE4A900BAD17A /* Info.plist */,
+				C26C5D8E1C5DE4A900BAD17A /* Supporting Files */,
+			);
+			path = TBPlayer;
+			sourceTree = "<group>";
+		};
+		C26C5D8E1C5DE4A900BAD17A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C26C5D8F1C5DE4A900BAD17A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64F6B0B41C99C9CF002DE053 /* TBPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64F6B0BC1C99C9CF002DE053 /* Build configuration list for PBXNativeTarget "TBPlayerTests" */;
+			buildPhases = (
+				64F6B0B11C99C9CF002DE053 /* Sources */,
+				64F6B0B21C99C9CF002DE053 /* Frameworks */,
+				64F6B0B31C99C9CF002DE053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64F6B0BB1C99C9CF002DE053 /* PBXTargetDependency */,
+			);
+			name = TBPlayerTests;
+			productName = TBPlayerTests;
+			productReference = 64F6B0B51C99C9CF002DE053 /* TBPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C26C5D8A1C5DE4A900BAD17A /* TBPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C26C5DA21C5DE4A900BAD17A /* Build configuration list for PBXNativeTarget "TBPlayer" */;
+			buildPhases = (
+				C26C5D871C5DE4A900BAD17A /* Sources */,
+				C26C5D881C5DE4A900BAD17A /* Frameworks */,
+				C26C5D891C5DE4A900BAD17A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBPlayer;
+			productName = TBPlayer;
+			productReference = C26C5D8B1C5DE4A900BAD17A /* TBPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C26C5D831C5DE4A900BAD17A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = SF;
+				TargetAttributes = {
+					64F6B0B41C99C9CF002DE053 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C26C5D8A1C5DE4A900BAD17A;
+					};
+					C26C5D8A1C5DE4A900BAD17A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = C26C5D861C5DE4A900BAD17A /* Build configuration list for PBXProject "TBPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C26C5D821C5DE4A900BAD17A;
+			productRefGroup = C26C5D8C1C5DE4A900BAD17A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C26C5D8A1C5DE4A900BAD17A /* TBPlayer */,
+				64F6B0B41C99C9CF002DE053 /* TBPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64F6B0B31C99C9CF002DE053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26C5D891C5DE4A900BAD17A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26C5D9E1C5DE4A900BAD17A /* LaunchScreen.storyboard in Resources */,
+				C26C5D9B1C5DE4A900BAD17A /* Assets.xcassets in Resources */,
+				78FB793C1E851044007B7120 /* testPlayIcon.jpg in Resources */,
+				C26C5D991C5DE4A900BAD17A /* Main.storyboard in Resources */,
+				78FB793D1E851044007B7120 /* testPoster.jpg in Resources */,
+				78FB79581E852A1E007B7120 /* MBProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64F6B0B11C99C9CF002DE053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F6B0B81C99C9CF002DE053 /* TBPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C26C5D871C5DE4A900BAD17A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78FB79411E851044007B7120 /* TBVideoRequestTask.m in Sources */,
+				6451DF421CA51374009DFF58 /* VideoModel.m in Sources */,
+				6451DF431CA51374009DFF58 /* VideoTableViewCell.m in Sources */,
+				78FB793F1E851044007B7120 /* TBloaderURLConnection.m in Sources */,
+				78FB796C1E852A39007B7120 /* MTAVResourceCache.m in Sources */,
+				C26C5D961C5DE4A900BAD17A /* ViewController.m in Sources */,
+				78FB796F1E852A39007B7120 /* MTAVResourceLoaderManager.m in Sources */,
+				78FB793E1E851044007B7120 /* avplayerVC.m in Sources */,
+				78FB79701E852A39007B7120 /* MTAVUtil.m in Sources */,
+				78FB796D1E852A39007B7120 /* MTAVResourceDataBlock.m in Sources */,
+				78FB79421E851044007B7120 /* XCHudHelper.m in Sources */,
+				78FB793B1E851044007B7120 /* MTAVPlayerView.m in Sources */,
+				78FB793A1E851044007B7120 /* MTAVPlayerController.m in Sources */,
+				6451DF441CA51374009DFF58 /* VideoArrayViewController.m in Sources */,
+				78FB79401E851044007B7120 /* TBPlayer.m in Sources */,
+				78FB796E1E852A39007B7120 /* MTAVResourceInfo.m in Sources */,
+				C26C5D931C5DE4A900BAD17A /* AppDelegate.m in Sources */,
+				78FB79711E852A39007B7120 /* MTAVResourceLoaderTask.m in Sources */,
+				78FB79721E852A39007B7120 /* MTAVResourceRequest.m in Sources */,
+				C26C5D901C5DE4A900BAD17A /* main.m in Sources */,
+				78FB79591E852A1E007B7120 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64F6B0BB1C99C9CF002DE053 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C26C5D8A1C5DE4A900BAD17A /* TBPlayer */;
+			targetProxy = 64F6B0BA1C99C9CF002DE053 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C26C5D971C5DE4A900BAD17A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C26C5D981C5DE4A900BAD17A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C26C5D9C1C5DE4A900BAD17A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C26C5D9D1C5DE4A900BAD17A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64F6B0BD1C99C9CF002DE053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TBPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.TBPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBPlayer.app/TBPlayer";
+			};
+			name = Debug;
+		};
+		64F6B0BE1C99C9CF002DE053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TBPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.TBPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TBPlayer.app/TBPlayer";
+			};
+			name = Release;
+		};
+		C26C5DA01C5DE4A900BAD17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C26C5DA11C5DE4A900BAD17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C26C5DA31C5DE4A900BAD17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TBPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suifeng.TBPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C26C5DA41C5DE4A900BAD17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TBPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suifeng.TBPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64F6B0BC1C99C9CF002DE053 /* Build configuration list for PBXNativeTarget "TBPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64F6B0BD1C99C9CF002DE053 /* Debug */,
+				64F6B0BE1C99C9CF002DE053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C26C5D861C5DE4A900BAD17A /* Build configuration list for PBXProject "TBPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C26C5DA01C5DE4A900BAD17A /* Debug */,
+				C26C5DA11C5DE4A900BAD17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C26C5DA21C5DE4A900BAD17A /* Build configuration list for PBXNativeTarget "TBPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C26C5DA31C5DE4A900BAD17A /* Debug */,
+				C26C5DA41C5DE4A900BAD17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C26C5D831C5DE4A900BAD17A /* Project object */;
+}

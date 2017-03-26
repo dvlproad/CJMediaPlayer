@@ -1,0 +1,72 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CJBaseUIKit/CJSlider/CJPlayerSlider (0.0.7)
+  - CJFoundation/NSString (0.0.1)
+  - CocoaAsyncSocket (7.6.0)
+  - CocoaHTTPServer (2.3):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (3.1.0):
+    - CocoaLumberjack/Default (= 3.1.0)
+    - CocoaLumberjack/Extensions (= 3.1.0)
+  - CocoaLumberjack/Default (3.1.0)
+  - CocoaLumberjack/Extensions (3.1.0):
+    - CocoaLumberjack/Default
+  - MBProgressHUD (0.9.2)
+  - PureLayout (2.0.6)
+  - Reachability (3.2)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - Toast (2.4)
+  - TransitionKit (2.2.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.1)
+  - CJBaseUIKit/CJSlider/CJPlayerSlider (~> 0.0.7)
+  - CJFoundation/NSString (~> 0.0.1)
+  - CocoaHTTPServer (~> 2.3)
+  - MBProgressHUD (~> 0.9)
+  - PureLayout (~> 2.0.6)
+  - Reachability (~> 3.2)
+  - SDWebImage (~> 3.7.2)
+  - Toast (~> 2.2)
+  - TransitionKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  CJBaseUIKit: bdb2d95fff70560a0035c04cb74bafb38fc86ae4
+  CJFoundation: fe34fab71f9e931443a837106fc7d2573f3d26d0
+  CocoaAsyncSocket: b9d5589f07baf9de8f34cc25abd4fcba28f13805
+  CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
+  CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  PureLayout: f25f0bb904d5ccfe6e31da3cb869185259f02e0d
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  Toast: 0773b8fc0e97352ca6054517bec7ebdd4110029d
+  TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
+
+PODFILE CHECKSUM: 7cf1c09427c981a50e9996cc5b8e40f448ab40e8
+
+COCOAPODS: 1.1.0.rc.2
