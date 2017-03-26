@@ -19,4 +19,8 @@
     return videoPreviewImage;
 }
 
+- (id)initWithVideoUrl:(NSString *)URL {
+    return nil;
+}
+
 @end

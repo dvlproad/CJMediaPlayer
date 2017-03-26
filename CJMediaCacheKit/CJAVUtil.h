@@ -24,7 +24,7 @@
 /**
  *  判断URL是否为伪URL
  *
- *  @param url
+ *  @param url  url
  *
  *  @return 判断结果(yes or no)
  */

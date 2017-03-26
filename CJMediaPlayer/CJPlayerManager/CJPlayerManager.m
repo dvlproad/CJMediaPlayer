@@ -76,7 +76,7 @@
  */
 - (void)setPlayIdentify:(NSString *)playIdentify
                 playURL:(NSURL *)url
-              needCache:(BOOL)cache
+              needCache:(BOOL)needCache
                 preload:(NSString *)preload
                delegate:(id <CJPlayerManagerDelegate>)delegate {
 
@@ -86,7 +86,7 @@
     self.preload      = preload;
     self.delegate     = delegate;
     
-    [self.mediaPlayer setUrl:url withCache:cache];
+    [self.mediaPlayer setUrl:url withCache:needCache];
 }
 
 /**

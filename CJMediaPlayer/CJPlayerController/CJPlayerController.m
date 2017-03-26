@@ -157,7 +157,7 @@
  *  播放时间改变回调
  *
  *  @param playerManager 播放管理器
- *  @param time          时间
+ *  @param progress          时间
  */
 - (void)playerManager:(CJPlayerManager *)playerManager progressDidChange:(CGFloat)progress {
     NSTimeInterval totalTime = [[CJMediaPlayer shared] duration];

@@ -15,7 +15,7 @@
     NSMutableArray *videoModels = [[NSMutableArray alloc] init];
     {
         CJFileModel *videoFile = [[CJFileModel alloc] initWithNetworkAbsoluteUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/86_671b0a2e1eab73e48eb3aafcbae5dcaa.mp4"];
-        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"好听到怀孕的一人饮酒醉" ofType:@"png"];
+        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"好听到怀孕的一人饮酒醉" ofType:@"jpg"];
         CJFileModel *firstFrameImageFile = [[CJFileModel alloc] initWithLocalAbsolutePath:imageLocalAbsolutePath sourceType:CJFileSourceTypeLocalBundle];
         
         VideoModel *videoModel = [[VideoModel alloc] init];
@@ -26,7 +26,7 @@
     
     {
         CJFileModel *videoFile = [[CJFileModel alloc] initWithNetworkAbsoluteUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/1252235_a05f804362182e822679d64a34a27beb.mp4"];
-        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"月光宝盒" ofType:@"png"];
+        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"月光宝盒" ofType:@"jpg"];
         CJFileModel *firstFrameImageFile = [[CJFileModel alloc] initWithLocalAbsolutePath:imageLocalAbsolutePath sourceType:CJFileSourceTypeLocalBundle];
         
         VideoModel *videoModel = [[VideoModel alloc] init];
@@ -37,7 +37,7 @@
     
     {
         CJFileModel *videoFile = [[CJFileModel alloc] initWithNetworkAbsoluteUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/180_b5bee2740585150a043f6bfef1c7dadf.mp4"];
-        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"老4机带你走" ofType:@"png"];
+        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"老4机带你走" ofType:@"jpg"];
         CJFileModel *firstFrameImageFile = [[CJFileModel alloc] initWithLocalAbsolutePath:imageLocalAbsolutePath sourceType:CJFileSourceTypeLocalBundle];
         
         VideoModel *videoModel = [[VideoModel alloc] init];
@@ -48,7 +48,7 @@
     
     {
         CJFileModel *videoFile = [[CJFileModel alloc] initWithNetworkAbsoluteUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/186_8421118854a759b008f88f165f6e4a77.mp4"];
-        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"新闻" ofType:@"png"];
+        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"新闻" ofType:@"jpg"];
         CJFileModel *firstFrameImageFile = [[CJFileModel alloc] initWithLocalAbsolutePath:imageLocalAbsolutePath sourceType:CJFileSourceTypeLocalBundle];
         
         VideoModel *videoModel = [[VideoModel alloc] init];
@@ -59,7 +59,7 @@
     
     {
         CJFileModel *videoFile = [[CJFileModel alloc] initWithNetworkAbsoluteUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/31_d60d53471eeb3bac193ee02df8446d2b.mp4"];
-        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"香肠舞" ofType:@"png"];
+        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"香肠舞" ofType:@"jpg"];
         CJFileModel *firstFrameImageFile = [[CJFileModel alloc] initWithLocalAbsolutePath:imageLocalAbsolutePath sourceType:CJFileSourceTypeLocalBundle];
         
         VideoModel *videoModel = [[VideoModel alloc] init];
@@ -70,7 +70,7 @@
     
     {
         CJFileModel *videoFile = [[CJFileModel alloc] initWithNetworkAbsoluteUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/1252235_378b225346db5f10cf8b492fc516fef9.mp4"];
-        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"打鼓妹" ofType:@"png"];
+        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"打鼓妹" ofType:@"jpg"];
         CJFileModel *firstFrameImageFile = [[CJFileModel alloc] initWithLocalAbsolutePath:imageLocalAbsolutePath sourceType:CJFileSourceTypeLocalBundle];
         
         VideoModel *videoModel = [[VideoModel alloc] init];
@@ -81,7 +81,7 @@
     
     {
         CJFileModel *videoFile = [[CJFileModel alloc] initWithNetworkAbsoluteUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/1252235_759edb019cdad3725eb4798e60b48def.mp4"];
-        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"你长的好漂亮，好想亲你一口" ofType:@"png"];
+        NSString *imageLocalAbsolutePath = [[NSBundle mainBundle] pathForResource:@"你长的好漂亮，好想亲你一口" ofType:@"jpg"];
         CJFileModel *firstFrameImageFile = [[CJFileModel alloc] initWithLocalAbsolutePath:imageLocalAbsolutePath sourceType:CJFileSourceTypeLocalBundle];
         
         VideoModel *videoModel = [[VideoModel alloc] init];

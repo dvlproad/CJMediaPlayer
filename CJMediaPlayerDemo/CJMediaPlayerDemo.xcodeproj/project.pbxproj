@@ -36,13 +36,13 @@
 		78270A351E8745E800E21433 /* cjLoadingAnimation7.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A1D1E8745E800E21433 /* cjLoadingAnimation7.png */; };
 		78270A361E8745E800E21433 /* cjLoadingAnimation8.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A1E1E8745E800E21433 /* cjLoadingAnimation8.png */; };
 		78270A371E8745E800E21433 /* cjLoadingAnimation9.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A1F1E8745E800E21433 /* cjLoadingAnimation9.png */; };
-		78270A381E8745E800E21433 /* 你长的好漂亮，好想亲你一口.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A201E8745E800E21433 /* 你长的好漂亮，好想亲你一口.png */; };
-		78270A391E8745E800E21433 /* 好听到怀孕的一人饮酒醉@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A211E8745E800E21433 /* 好听到怀孕的一人饮酒醉@2x.png */; };
-		78270A3A1E8745E800E21433 /* 打鼓妹.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A221E8745E800E21433 /* 打鼓妹.png */; };
-		78270A3B1E8745E800E21433 /* 新闻.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A231E8745E800E21433 /* 新闻.png */; };
-		78270A3C1E8745E800E21433 /* 月光宝盒.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A241E8745E800E21433 /* 月光宝盒.png */; };
-		78270A3D1E8745E800E21433 /* 老4机带你走.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A251E8745E800E21433 /* 老4机带你走.png */; };
-		78270A3E1E8745E800E21433 /* 香肠舞.png in Resources */ = {isa = PBXBuildFile; fileRef = 78270A261E8745E800E21433 /* 香肠舞.png */; };
+		78270A381E8745E800E21433 /* 你长的好漂亮，好想亲你一口.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78270A201E8745E800E21433 /* 你长的好漂亮，好想亲你一口.jpg */; };
+		78270A391E8745E800E21433 /* 好听到怀孕的一人饮酒醉.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78270A211E8745E800E21433 /* 好听到怀孕的一人饮酒醉.jpg */; };
+		78270A3A1E8745E800E21433 /* 打鼓妹.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78270A221E8745E800E21433 /* 打鼓妹.jpg */; };
+		78270A3B1E8745E800E21433 /* 新闻.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78270A231E8745E800E21433 /* 新闻.jpg */; };
+		78270A3C1E8745E800E21433 /* 月光宝盒.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78270A241E8745E800E21433 /* 月光宝盒.jpg */; };
+		78270A3D1E8745E800E21433 /* 老4机带你走.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78270A251E8745E800E21433 /* 老4机带你走.jpg */; };
+		78270A3E1E8745E800E21433 /* 香肠舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78270A261E8745E800E21433 /* 香肠舞.jpg */; };
 		7859D0371E5B5DFC00366FAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859D0361E5B5DFC00366FAC /* main.m */; };
 		7859D03A1E5B5DFC00366FAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859D0391E5B5DFC00366FAC /* AppDelegate.m */; };
 		7859D03D1E5B5DFC00366FAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859D03C1E5B5DFC00366FAC /* ViewController.m */; };
@@ -133,13 +133,13 @@
 		78270A1D1E8745E800E21433 /* cjLoadingAnimation7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cjLoadingAnimation7.png; sourceTree = "<group>"; };
 		78270A1E1E8745E800E21433 /* cjLoadingAnimation8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cjLoadingAnimation8.png; sourceTree = "<group>"; };
 		78270A1F1E8745E800E21433 /* cjLoadingAnimation9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cjLoadingAnimation9.png; sourceTree = "<group>"; };
-		78270A201E8745E800E21433 /* 你长的好漂亮，好想亲你一口.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "你长的好漂亮，好想亲你一口.png"; sourceTree = "<group>"; };
-		78270A211E8745E800E21433 /* 好听到怀孕的一人饮酒醉@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "好听到怀孕的一人饮酒醉@2x.png"; sourceTree = "<group>"; };
-		78270A221E8745E800E21433 /* 打鼓妹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "打鼓妹.png"; sourceTree = "<group>"; };
-		78270A231E8745E800E21433 /* 新闻.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新闻.png"; sourceTree = "<group>"; };
-		78270A241E8745E800E21433 /* 月光宝盒.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "月光宝盒.png"; sourceTree = "<group>"; };
-		78270A251E8745E800E21433 /* 老4机带你走.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "老4机带你走.png"; sourceTree = "<group>"; };
-		78270A261E8745E800E21433 /* 香肠舞.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "香肠舞.png"; sourceTree = "<group>"; };
+		78270A201E8745E800E21433 /* 你长的好漂亮，好想亲你一口.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "你长的好漂亮，好想亲你一口.jpg"; sourceTree = "<group>"; };
+		78270A211E8745E800E21433 /* 好听到怀孕的一人饮酒醉.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "好听到怀孕的一人饮酒醉.jpg"; sourceTree = "<group>"; };
+		78270A221E8745E800E21433 /* 打鼓妹.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "打鼓妹.jpg"; sourceTree = "<group>"; };
+		78270A231E8745E800E21433 /* 新闻.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "新闻.jpg"; sourceTree = "<group>"; };
+		78270A241E8745E800E21433 /* 月光宝盒.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "月光宝盒.jpg"; sourceTree = "<group>"; };
+		78270A251E8745E800E21433 /* 老4机带你走.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "老4机带你走.jpg"; sourceTree = "<group>"; };
+		78270A261E8745E800E21433 /* 香肠舞.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "香肠舞.jpg"; sourceTree = "<group>"; };
 		7859D0321E5B5DFC00366FAC /* CJMediaPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJMediaPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7859D0361E5B5DFC00366FAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7859D0381E5B5DFC00366FAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -283,13 +283,13 @@
 			isa = PBXGroup;
 			children = (
 				78270A0E1E8745E800E21433 /* cjLoadingAnimation */,
-				78270A201E8745E800E21433 /* 你长的好漂亮，好想亲你一口.png */,
-				78270A211E8745E800E21433 /* 好听到怀孕的一人饮酒醉@2x.png */,
-				78270A221E8745E800E21433 /* 打鼓妹.png */,
-				78270A231E8745E800E21433 /* 新闻.png */,
-				78270A241E8745E800E21433 /* 月光宝盒.png */,
-				78270A251E8745E800E21433 /* 老4机带你走.png */,
-				78270A261E8745E800E21433 /* 香肠舞.png */,
+				78270A201E8745E800E21433 /* 你长的好漂亮，好想亲你一口.jpg */,
+				78270A211E8745E800E21433 /* 好听到怀孕的一人饮酒醉.jpg */,
+				78270A221E8745E800E21433 /* 打鼓妹.jpg */,
+				78270A231E8745E800E21433 /* 新闻.jpg */,
+				78270A241E8745E800E21433 /* 月光宝盒.jpg */,
+				78270A251E8745E800E21433 /* 老4机带你走.jpg */,
+				78270A261E8745E800E21433 /* 香肠舞.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -345,7 +345,6 @@
 			children = (
 				7859D0381E5B5DFC00366FAC /* AppDelegate.h */,
 				7859D0391E5B5DFC00366FAC /* AppDelegate.m */,
-				78270A0D1E8745E800E21433 /* Resources */,
 				782709FC1E87258200E21433 /* CJPlayer */,
 				78FB79181E850F48007B7120 /* TBPlayer */,
 				78FB78FF1E850E67007B7120 /* CJMediaCacheKit */,
@@ -357,6 +356,7 @@
 				78DD702A1E8365A50051C68D /* Views */,
 				7859D03E1E5B5DFC00366FAC /* Main.storyboard */,
 				78FB794E1E852956007B7120 /* Models */,
+				78270A0D1E8745E800E21433 /* Resources */,
 				7859D0411E5B5DFC00366FAC /* Assets.xcassets */,
 				7859D0431E5B5DFC00366FAC /* LaunchScreen.storyboard */,
 				7859D0461E5B5DFC00366FAC /* Info.plist */,
@@ -614,7 +614,7 @@
 		7859D02A1E5B5DFC00366FAC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = dvlproad;
 				TargetAttributes = {
 					7859D0311E5B5DFC00366FAC = {
@@ -661,7 +661,7 @@
 				78270A291E8745E800E21433 /* cjLoadingAnimation11.png in Resources */,
 				782709171E86FB6700E21433 /* VideoListViewController.xib in Resources */,
 				7859D0451E5B5DFC00366FAC /* LaunchScreen.storyboard in Resources */,
-				78270A3D1E8745E800E21433 /* 老4机带你走.png in Resources */,
+				78270A3D1E8745E800E21433 /* 老4机带你走.jpg in Resources */,
 				78270A2C1E8745E800E21433 /* cjLoadingAnimation14.png in Resources */,
 				78270A2D1E8745E800E21433 /* cjLoadingAnimation15.png in Resources */,
 				78270A2E1E8745E800E21433 /* cjLoadingAnimation16.png in Resources */,
@@ -675,19 +675,19 @@
 				7859D0401E5B5DFC00366FAC /* Main.storyboard in Resources */,
 				78270A051E87258200E21433 /* testPlayIcon.jpg in Resources */,
 				78270A061E87258200E21433 /* testPoster.jpg in Resources */,
-				78270A391E8745E800E21433 /* 好听到怀孕的一人饮酒醉@2x.png in Resources */,
+				78270A391E8745E800E21433 /* 好听到怀孕的一人饮酒醉.jpg in Resources */,
 				78270A281E8745E800E21433 /* cjLoadingAnimation10.png in Resources */,
 				78270A311E8745E800E21433 /* cjLoadingAnimation3.png in Resources */,
-				78270A3B1E8745E800E21433 /* 新闻.png in Resources */,
-				78270A3E1E8745E800E21433 /* 香肠舞.png in Resources */,
+				78270A3B1E8745E800E21433 /* 新闻.jpg in Resources */,
+				78270A3E1E8745E800E21433 /* 香肠舞.jpg in Resources */,
 				78270A371E8745E800E21433 /* cjLoadingAnimation9.png in Resources */,
 				78270A331E8745E800E21433 /* cjLoadingAnimation5.png in Resources */,
 				78270A2A1E8745E800E21433 /* cjLoadingAnimation12.png in Resources */,
-				78270A381E8745E800E21433 /* 你长的好漂亮，好想亲你一口.png in Resources */,
-				78270A3A1E8745E800E21433 /* 打鼓妹.png in Resources */,
+				78270A381E8745E800E21433 /* 你长的好漂亮，好想亲你一口.jpg in Resources */,
+				78270A3A1E8745E800E21433 /* 打鼓妹.jpg in Resources */,
 				78270A341E8745E800E21433 /* cjLoadingAnimation6.png in Resources */,
 				78270A351E8745E800E21433 /* cjLoadingAnimation7.png in Resources */,
-				78270A3C1E8745E800E21433 /* 月光宝盒.png in Resources */,
+				78270A3C1E8745E800E21433 /* 月光宝盒.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,6 +867,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -915,6 +916,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

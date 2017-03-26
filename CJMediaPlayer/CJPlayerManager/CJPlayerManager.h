@@ -48,7 +48,7 @@
  */
 - (void)setPlayIdentify:(NSString *)playIdentify
                 playURL:(NSURL *)url
-              needCache:(BOOL)cache
+              needCache:(BOOL)needCache
                 preload:(NSString *)preload
                delegate:(id <CJPlayerManagerDelegate>)delegate;
 
@@ -69,14 +69,16 @@
 /**
  *  判断manager是否和相应的playIdentify link
  *
- *  @param playIdentify
+ *  @param playIdentify playIdentify
+ *
+ *  return  是否
  */
 - (BOOL)isLinkedWithPlayIdentify:(NSString *)playIdentify;
 
 /**
  *  返回videoView
  *
- *  @return
+ *  @return videoView
  */
 - (CJVideoView *)videoView;
 
@@ -149,8 +151,8 @@
 /**
  *  播放时间改变回调
  *
- *  @param playerManager 播放管理器
- *  @param time          时间
+ *  @param playerManager    播放管理器
+ *  @param progress         时间
  */
 - (void)playerManager:(CJPlayerManager *)playerManager progressDidChange:(CGFloat)progress;
 
