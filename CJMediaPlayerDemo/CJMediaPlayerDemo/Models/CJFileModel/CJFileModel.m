@@ -1,9 +1,9 @@
 //
 //  CJFileModel.m
-//  CJMediaPlayerDemo
+//  CommonFMDBUtilDemo
 //
 //  Created by dvlproad on 2016/3/25.
-//  Copyright © 2017年 dvlproad. All rights reserved.
+//  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import "CJFileModel.h"

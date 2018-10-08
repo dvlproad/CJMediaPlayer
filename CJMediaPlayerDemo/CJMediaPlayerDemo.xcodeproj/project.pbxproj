@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		14D9D880F62A2EA190099A3C /* libPods-CJMediaPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B977F9172DCDDB8EF78DCC79 /* libPods-CJMediaPlayerDemo.a */; };
 		7827090C1E86935600E21433 /* TestDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827090B1E86935600E21433 /* TestDataUtil.m */; };
-		782709101E86CA3100E21433 /* CJFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827090F1E86CA3100E21433 /* CJFileModel.m */; };
 		782709161E86FB6700E21433 /* VideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709141E86FB6700E21433 /* VideoListViewController.m */; };
 		782709171E86FB6700E21433 /* VideoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782709151E86FB6700E21433 /* VideoListViewController.xib */; };
 		782709F81E87204F00E21433 /* CJMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709F21E87204F00E21433 /* CJMediaPlayer.m */; };
@@ -60,6 +59,7 @@
 		78DD705C1E83661B0051C68D /* CJLoadingProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DD70441E83661B0051C68D /* CJLoadingProgressView.m */; };
 		78DD705D1E83661B0051C68D /* CJPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DD70461E83661B0051C68D /* CJPlayerView.m */; };
 		78DD705E1E83661B0051C68D /* CJPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DD70481E83661B0051C68D /* CJPlayerViewController.m */; };
+		78E59A361E97755900B16C12 /* CJFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E59A351E97755900B16C12 /* CJFileModel.m */; };
 		78FB79111E850E67007B7120 /* CJAVResourceCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79021E850E67007B7120 /* CJAVResourceCache.m */; };
 		78FB79121E850E67007B7120 /* CJAVResourceDataBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79041E850E67007B7120 /* CJAVResourceDataBlock.m */; };
 		78FB79131E850E67007B7120 /* MTAVResourceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79061E850E67007B7120 /* MTAVResourceInfo.m */; };
@@ -98,8 +98,6 @@
 		27269A6EF1464EB8E3765AFC /* Pods-CJMediaPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMediaPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJMediaPlayerDemo/Pods-CJMediaPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7827090A1E86935600E21433 /* TestDataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataUtil.h; sourceTree = "<group>"; };
 		7827090B1E86935600E21433 /* TestDataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataUtil.m; sourceTree = "<group>"; };
-		7827090E1E86CA3100E21433 /* CJFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFileModel.h; sourceTree = "<group>"; };
-		7827090F1E86CA3100E21433 /* CJFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFileModel.m; sourceTree = "<group>"; };
 		782709131E86FB6700E21433 /* VideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoListViewController.h; sourceTree = "<group>"; };
 		782709141E86FB6700E21433 /* VideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoListViewController.m; sourceTree = "<group>"; };
 		782709151E86FB6700E21433 /* VideoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoListViewController.xib; sourceTree = "<group>"; };
@@ -174,6 +172,8 @@
 		78DD70461E83661B0051C68D /* CJPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJPlayerView.m; sourceTree = "<group>"; };
 		78DD70471E83661B0051C68D /* CJPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJPlayerViewController.h; sourceTree = "<group>"; };
 		78DD70481E83661B0051C68D /* CJPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJPlayerViewController.m; sourceTree = "<group>"; };
+		78E59A341E97755900B16C12 /* CJFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFileModel.h; sourceTree = "<group>"; };
+		78E59A351E97755900B16C12 /* CJFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFileModel.m; sourceTree = "<group>"; };
 		78FB79011E850E67007B7120 /* CJAVResourceCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAVResourceCache.h; sourceTree = "<group>"; };
 		78FB79021E850E67007B7120 /* CJAVResourceCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAVResourceCache.m; sourceTree = "<group>"; };
 		78FB79031E850E67007B7120 /* CJAVResourceDataBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAVResourceDataBlock.h; sourceTree = "<group>"; };
@@ -464,6 +464,15 @@
 			path = CJPlayerMaskView;
 			sourceTree = "<group>";
 		};
+		78E59A331E97755900B16C12 /* CJFileModel */ = {
+			isa = PBXGroup;
+			children = (
+				78E59A341E97755900B16C12 /* CJFileModel.h */,
+				78E59A351E97755900B16C12 /* CJFileModel.m */,
+			);
+			path = CJFileModel;
+			sourceTree = "<group>";
+		};
 		78FB78FF1E850E67007B7120 /* CJMediaCacheKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,8 +535,7 @@
 			children = (
 				78FB794F1E852956007B7120 /* VideoModel.h */,
 				78FB79501E852956007B7120 /* VideoModel.m */,
-				7827090E1E86CA3100E21433 /* CJFileModel.h */,
-				7827090F1E86CA3100E21433 /* CJFileModel.m */,
+				78E59A331E97755900B16C12 /* CJFileModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -763,6 +771,7 @@
 				78FB79161E850E67007B7120 /* CJAVResourceLoaderTask.m in Sources */,
 				782709FA1E87204F00E21433 /* CJPlayerManager.m in Sources */,
 				7859D03D1E5B5DFC00366FAC /* ViewController.m in Sources */,
+				78E59A361E97755900B16C12 /* CJFileModel.m in Sources */,
 				78270A041E87258200E21433 /* CJAVPlayerView.m in Sources */,
 				7859D03A1E5B5DFC00366FAC /* AppDelegate.m in Sources */,
 				78FB79171E850E67007B7120 /* CJAVResourceRequest.m in Sources */,
@@ -776,7 +785,6 @@
 				78DD702F1E8365A50051C68D /* VideoViewController.m in Sources */,
 				78FB79151E850E67007B7120 /* CJAVUtil.m in Sources */,
 				78270A031E87258200E21433 /* CJAVPlayerController.m in Sources */,
-				782709101E86CA3100E21433 /* CJFileModel.m in Sources */,
 				78FB79231E850F48007B7120 /* avplayerVC.m in Sources */,
 				78FB79111E850E67007B7120 /* CJAVResourceCache.m in Sources */,
 				78DD702D1E8365A50051C68D /* DemoNavigationController.m in Sources */,
