@@ -11,7 +11,7 @@
 #import "TBVideoRequestTask.h"
 #import "XCHudHelper.h"
 
-#import "MTAVCacheKit.h"
+#import "CJAVCacheKit.h"
 
 #define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
 #define kScreenWidth ([UIScreen mainScreen].bounds.size.width)

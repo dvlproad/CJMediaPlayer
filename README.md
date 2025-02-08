@@ -9,6 +9,7 @@
 * 手势点击后播放进度条的显示隐藏
 
 2、Video 相关
+
 * 支持边下边播（缓存）
 * 缓存已经播放过的近期视频
 * playback
@@ -78,21 +79,21 @@ NSURL *url = [NSURL URLWithString:@"http://mvvideo2.meitudata.com/56f103d8d2cf51
 NSURL *fakeUrl = [MTAVUtil fakeUrl:url];
 AVURLAsset *videoURLAsset      = [AVURLAsset URLAssetWithURL:fakeUrl options:nil];
 ```
-2 创建MTAVResourceLoaderManager缓存实例，并将其设置给AVURLAsset的resourceLoader属性的委托（注意这里的缓存实例必须是强制拥有的）
+2 创建CJAVAssetResourceLoaderManager缓存实例，并将其设置给AVURLAsset的resourceLoader属性的委托（注意这里的缓存实例必须是强制拥有的）
 
 ```
-MTAVResourceLoaderManager *loaderManager = [[MTAVResourceLoaderManager alloc] init];
+CJAVAssetResourceLoaderManager *loaderManager = [[CJAVAssetResourceLoaderManager alloc] init];
 [videoURLAsset.resourceLoader setDelegate:loaderManager 
 										 queue:dispatch_get_main_queue()];
 ```
 
 
-3 附加：如果有视频播放的切换时，记得要调用MTAVResourceLoaderManager的clean方法，清理一下，例如：
+3 附加：如果有视频播放的切换时，记得要调用CJAVAssetResourceLoaderManager的clean方法，清理一下，例如：
 ```
 [self.loaderManager clean];
 ```
 
-备注：全局只需一个MTAVResourceLoaderManager的实例即可，播放切换时 必须先clean一下.
+备注：全局只需一个CJAVAssetResourceLoaderManager的实例即可，播放切换时 必须先clean一下.
 
 #### 其他
 * 缓存问题 - 播放10s内的视频文件时，可能会出现刚开始黑屏的现象，貌似边下边播对于超短视频，其实已经要下载完才开始播放了
@@ -120,4 +121,4 @@ iOS	   dvlproad (studyroad@qq.com)
 [0.0.1] 2016.04.09 提取组件，构造podspec，并修改Readme
 
  
- 
+

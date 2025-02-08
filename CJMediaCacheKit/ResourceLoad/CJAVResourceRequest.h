@@ -1,5 +1,5 @@
 //
-//  MTAVResourceConnection.h
+//  CJAVResourceRequest.h
 //  CJMediaPlayerDemo
 //
 //  Created by dvlproad on 16/3/15.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MTAVResourceInfo.h"
+#import "CJAVResourceInfo.h"
 
 typedef void(^ResourceLoaderDataUpdateBlock)();
 typedef void(^ResourceLoaderDataFinishBlock)();
@@ -53,7 +53,7 @@ typedef NS_ENUM(NSUInteger, CJAVResourceRequestStatus) {
  *
  *  @return 请求
  */
-- (instancetype)initWithResourceInfo:(MTAVResourceInfo *)resourceInfo
+- (instancetype)initWithResourceInfo:(CJAVResourceInfo *)resourceInfo
                               Offset:(int64_t)offset
                               Length:(int64_t)len;
 

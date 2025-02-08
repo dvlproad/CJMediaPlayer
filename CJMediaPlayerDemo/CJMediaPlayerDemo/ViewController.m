@@ -32,7 +32,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.buttonVideo = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.buttonVideo setTitle:@"Video" forState:UIControlStateNormal];
+    [self.buttonVideo setTitle:@"单个视频的播放" forState:UIControlStateNormal];
     [self.buttonVideo setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.buttonVideo.frame = CGRectMake(100.0f, 100.0f, 80.0f, 60.0f);
     [self.buttonVideo addTarget:self action:@selector(doButtonEnterVideoView:) forControlEvents:UIControlEventTouchUpInside];
@@ -40,7 +40,7 @@
     
     UIButton *tableViewButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:tableViewButton];
-    [tableViewButton setTitle:@"Video List" forState:UIControlStateNormal];
+    [tableViewButton setTitle:@"视频列表的播放" forState:UIControlStateNormal];
     [tableViewButton addTarget:self action:@selector(jumpToTableView:) forControlEvents:UIControlEventTouchUpInside];
     [tableViewButton autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:8];
     [tableViewButton autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:8];

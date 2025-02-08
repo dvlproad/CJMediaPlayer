@@ -101,7 +101,7 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
               context:nil];
     
     
-    self.playerStatus = MTAVPlayerStateUnStart; //未开始
+    self.playerStatus = CJAVPlayerStateUnStart; //未开始
 
     //海报
     self.posterImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
@@ -216,7 +216,7 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
     if ([keyPath isEqualToString:kKVOKeyPathPlayerStatus]) {
         
         switch (self.playerStatus) {
-            case MTAVPlayerStateUnStart:
+            case CJAVPlayerStateUnStart:
             {
                 //未开始时，显示海报,播放图标, 隐藏菊花等待
                 [self showPoster:YES];
@@ -227,7 +227,7 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
                 
                 break;
             }
-            case MTAVPlayerStateBuffering:
+            case CJAVPlayerStateBuffering:
             {
                 //缓冲,隐藏海报和播放图标，并显示菊花等待
                 [self showPoster:NO];
@@ -235,7 +235,7 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
                 [self showLoading];
                 break;
             }
-            case MTAVPlayerStatePlaying:
+            case CJAVPlayerStatePlaying:
             {
                 //播放,隐藏海报和图标，停止并隐藏菊花等待
                 [self showPoster:NO];
@@ -243,7 +243,7 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
                 [self hideLoading];
                 break;
             }
-            case MTAVPlayerStatePause:
+            case CJAVPlayerStatePause:
             {
                 //暂停，隐藏海报，显示播放按钮, 隐藏菊花等待
                 [self showPoster:NO];
@@ -251,7 +251,7 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
                 [self hideLoading];
                 break;
             }
-            case MTAVPlayerStateSlidePause:
+            case CJAVPlayerStateSlidePause:
             {
                 //滑动暂停，隐藏海报，隐藏播放按钮, 隐藏菊花等待
                 [self showPoster:NO];
@@ -345,7 +345,7 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
 - (void)stop
 {
     
-    self.playerStatus = MTAVPlayerStateUnStart;
+    self.playerStatus = CJAVPlayerStateUnStart;
     
     //停止
     CJAVPlayerController *playerController = [CJAVPlayerController sharedInstance];
@@ -387,26 +387,26 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
 {
     
     switch (self.playerStatus) {
-        case MTAVPlayerStateUnStart:
+        case CJAVPlayerStateUnStart:
         {
             //开始播放
             [self play];
             break;
         }
-        case MTAVPlayerStateBuffering:
+        case CJAVPlayerStateBuffering:
         {
             //暂停
             [self pause];
             break;
         }
-        case MTAVPlayerStatePause:
-        case MTAVPlayerStateSlidePause:
+        case CJAVPlayerStatePause:
+        case CJAVPlayerStateSlidePause:
         {
             //继续播放
             [self resume];
             break;
         }
-        case MTAVPlayerStatePlaying:
+        case CJAVPlayerStatePlaying:
         {
             //暂停
             [self pause];
@@ -439,7 +439,7 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
 - (void)playSliderChangedStart:(UISlider *)slider
 {
     //暂停播放
-    if (self.playerStatus == MTAVPlayerStatePause) {
+    if (self.playerStatus == CJAVPlayerStatePause) {
         [self pause];
     } else {
         [self slidePause];

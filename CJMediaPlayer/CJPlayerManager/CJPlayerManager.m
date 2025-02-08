@@ -92,8 +92,6 @@
 /**
  *  当前播放标识的播放状态
  *
- *  @param playIdentify 播放标识
- *
  *  @return 播放状态
  */
 - (CJMediaPlayerStatus)status {
@@ -103,7 +101,9 @@
 /**
  *  判断manager是否和相应的playIdentify link
  *
- *  @param playIdentify
+ *  @param playIdentify         播放标识
+ *
+ *  @return 结果
  */
 - (BOOL)isLinkedWithPlayIdentify:(NSString *)playIdentify {
     return [self.playIdentify isEqualToString:playIdentify];
@@ -112,7 +112,7 @@
 /**
  *  返回videoView
  *
- *  @return
+ *  @return 视图
  */
 - (CJVideoView *)videoView {
     return self.mediaPlayer.videoView;

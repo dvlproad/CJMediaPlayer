@@ -48,7 +48,7 @@
 - (void)reset
 {
     self.videoModel = nil;
-    if (self.playerView.playerStatus != MTAVPlayerStateUnStart) {
+    if (self.playerView.playerStatus != CJAVPlayerStateUnStart) {
         [self.playerView stop];
     }
 }

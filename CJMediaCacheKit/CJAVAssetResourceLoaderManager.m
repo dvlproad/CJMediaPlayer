@@ -1,5 +1,5 @@
 //
-//  MTAVResourceLoader.m
+//  CJAVAssetResourceLoaderManager.m
 //  CJMediaPlayerDemo
 //
 //  Created by dvlproad on 16/3/9.
@@ -81,9 +81,9 @@
     [self.pendingRequestArr addObject:loadingRequest];
     [self dealWithLoadingRequest:loadingRequest];
 
-    MTAVResourceInfo *resourceInfo = self.loaderTask.curResourceInfo;
+    CJAVResourceInfo *resourceInfo = self.loaderTask.curResourceInfo;
     
-    if (resourceInfo.status != MTAVResourceInfoStatus_None) {
+    if (resourceInfo.status != CJAVResourceInfoStatus_None) {
         [self processPendingRequests];
     }
 
@@ -170,17 +170,17 @@
     int64_t reqCurrentOffset = loadingRequest.dataRequest.currentOffset;
     int64_t reqRequireLen    = loadingRequest.dataRequest.requestedLength;
     
-    int64_t startSegment  = [MTAVResourceInfo segmentWithOffset:reqCurrentOffset];
-    int64_t endSegment    = [MTAVResourceInfo segmentWithOffset:reqCurrentOffset Length:reqRequireLen];
+    int64_t startSegment  = [CJAVResourceInfo segmentWithOffset:reqCurrentOffset];
+    int64_t endSegment    = [CJAVResourceInfo segmentWithOffset:reqCurrentOffset Length:reqRequireLen];
     
     NSLog(@"loadrequest: reqOffset = %lld, reqLength = %lld, startSegment = %lld, endSegment = %lld",
           reqCurrentOffset, reqRequireLen, startSegment, endSegment);
     
     
     
-    MTAVResourceInfoStatus status = self.loaderTask.curResourceInfo.status;
+    CJAVResourceInfoStatus status = self.loaderTask.curResourceInfo.status;
     switch (status) {
-        case MTAVResourceInfoStatus_None:
+        case CJAVResourceInfoStatus_None:
         {
             
             NSLog(@"文件没有任何缓存, 请求所有数据");
@@ -189,7 +189,7 @@
             [self.loaderTask doLoadTaskWithDataBlockArr:nil LoadingRequest:loadingRequest];
             break;
         }
-        case MTAVResourceInfoStatus_Whole:
+        case CJAVResourceInfoStatus_Whole:
         {
             NSLog(@"文件已全部缓存, 可以直接finish该请求");
             
@@ -197,7 +197,7 @@
             [self responseWholeDataForRequest:loadingRequest];
             break;
         }
-        case MTAVResourceInfoStatus_Partial:
+        case CJAVResourceInfoStatus_Partial:
         {
             
             
@@ -314,8 +314,8 @@
     int64_t reqCurrentOffset  = dataRequest.currentOffset;
     reqRequireLen -= (dataRequest.currentOffset - dataRequest.requestedOffset);
     
-    int64_t startSegment  = [MTAVResourceInfo segmentWithOffset:reqCurrentOffset];
-    int64_t endSegment    = [MTAVResourceInfo segmentWithOffset:reqCurrentOffset Length:reqRequireLen];
+    int64_t startSegment  = [CJAVResourceInfo segmentWithOffset:reqCurrentOffset];
+    int64_t endSegment    = [CJAVResourceInfo segmentWithOffset:reqCurrentOffset Length:reqRequireLen];
     
     BOOL didRespondFully = NO;
     BOOL isCached = [self.loaderTask.curResourceInfo isCachedWithStartSegment:startSegment EndSegment:endSegment];
@@ -340,7 +340,7 @@
         
         if (lastSegment >= startSegment) {
             
-            int64_t lastOffset = (lastSegment + 1) * [MTAVResourceInfo segmentLength];
+            int64_t lastOffset = (lastSegment + 1) * [CJAVResourceInfo segmentLength];
             NSRange range = NSMakeRange((NSUInteger)reqCurrentOffset, (NSUInteger)(lastOffset - reqCurrentOffset));
 
             NSLog(@"response___loadingRequest: currentOffset = %tu, len = %tu", range.location, range.length);

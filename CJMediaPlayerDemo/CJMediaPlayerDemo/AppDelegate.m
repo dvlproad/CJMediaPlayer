@@ -8,7 +8,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "UIWindow+RootSetting.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 设置主窗口,并设置根控制器
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window settingRoot];
+    
     return YES;
 }
 

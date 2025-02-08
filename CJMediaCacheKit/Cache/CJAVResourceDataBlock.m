@@ -7,7 +7,7 @@
 //
 
 #import "CJAVResourceDataBlock.h"
-#import "MTAVResourceInfo.h"
+#import "CJAVResourceInfo.h"
 
 @implementation CJAVResourceDataBlock
 
@@ -23,11 +23,11 @@
 
 
 - (int64_t)offset {
-    return self.startSegment * [MTAVResourceInfo segmentLength];
+    return self.startSegment * [CJAVResourceInfo segmentLength];
 }
 
 - (int64_t)len {
-    return ( self.endSegment - self.startSegment + 1 ) * [MTAVResourceInfo segmentLength];
+    return ( self.endSegment - self.startSegment + 1 ) * [CJAVResourceInfo segmentLength];
 }
 
 @end

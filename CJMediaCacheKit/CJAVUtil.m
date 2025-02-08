@@ -48,7 +48,7 @@ static NSString *fakeSchemePrefix = @"streaming";
 /**
  *  判断URL是否为伪URL
  *
- *  @param url
+ *  @param url  要判断的URL
  *
  *  @return 判断结果(yes or no)
  */

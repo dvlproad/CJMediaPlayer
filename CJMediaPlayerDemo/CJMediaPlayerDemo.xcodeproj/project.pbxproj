@@ -62,7 +62,7 @@
 		78E59A361E97755900B16C12 /* CJFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E59A351E97755900B16C12 /* CJFileModel.m */; };
 		78FB79111E850E67007B7120 /* CJAVResourceCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79021E850E67007B7120 /* CJAVResourceCache.m */; };
 		78FB79121E850E67007B7120 /* CJAVResourceDataBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79041E850E67007B7120 /* CJAVResourceDataBlock.m */; };
-		78FB79131E850E67007B7120 /* MTAVResourceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79061E850E67007B7120 /* MTAVResourceInfo.m */; };
+		78FB79131E850E67007B7120 /* CJAVResourceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79061E850E67007B7120 /* CJAVResourceInfo.m */; };
 		78FB79141E850E67007B7120 /* CJAVAssetResourceLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79091E850E67007B7120 /* CJAVAssetResourceLoaderManager.m */; };
 		78FB79151E850E67007B7120 /* CJAVUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB790B1E850E67007B7120 /* CJAVUtil.m */; };
 		78FB79161E850E67007B7120 /* CJAVResourceLoaderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB790E1E850E67007B7120 /* CJAVResourceLoaderTask.m */; };
@@ -75,6 +75,8 @@
 		78FB794D1E85294C007B7120 /* VideoArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB794C1E85294C007B7120 /* VideoArrayViewController.m */; };
 		78FB79511E852956007B7120 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79501E852956007B7120 /* VideoModel.m */; };
 		78FB79541E85295D007B7120 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79531E85295D007B7120 /* VideoTableViewCell.m */; };
+		9730F3A32D57CF0F008AF628 /* VideoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9730F3A22D57CF0F008AF628 /* VideoHomeViewController.m */; };
+		9730F3A62D57D5D2008AF628 /* UIWindow+RootSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9730F3A52D57D5D2008AF628 /* UIWindow+RootSetting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,9 +180,9 @@
 		78FB79021E850E67007B7120 /* CJAVResourceCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAVResourceCache.m; sourceTree = "<group>"; };
 		78FB79031E850E67007B7120 /* CJAVResourceDataBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAVResourceDataBlock.h; sourceTree = "<group>"; };
 		78FB79041E850E67007B7120 /* CJAVResourceDataBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAVResourceDataBlock.m; sourceTree = "<group>"; };
-		78FB79051E850E67007B7120 /* MTAVResourceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVResourceInfo.h; sourceTree = "<group>"; };
-		78FB79061E850E67007B7120 /* MTAVResourceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAVResourceInfo.m; sourceTree = "<group>"; };
-		78FB79071E850E67007B7120 /* MTAVCacheKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAVCacheKit.h; sourceTree = "<group>"; };
+		78FB79051E850E67007B7120 /* CJAVResourceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAVResourceInfo.h; sourceTree = "<group>"; };
+		78FB79061E850E67007B7120 /* CJAVResourceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAVResourceInfo.m; sourceTree = "<group>"; };
+		78FB79071E850E67007B7120 /* CJAVCacheKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAVCacheKit.h; sourceTree = "<group>"; };
 		78FB79081E850E67007B7120 /* CJAVAssetResourceLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAVAssetResourceLoaderManager.h; sourceTree = "<group>"; };
 		78FB79091E850E67007B7120 /* CJAVAssetResourceLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAVAssetResourceLoaderManager.m; sourceTree = "<group>"; };
 		78FB790A1E850E67007B7120 /* CJAVUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAVUtil.h; sourceTree = "<group>"; };
@@ -205,6 +207,10 @@
 		78FB79501E852956007B7120 /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		78FB79521E85295D007B7120 /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTableViewCell.h; sourceTree = "<group>"; };
 		78FB79531E85295D007B7120 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
+		9730F3A12D57CF0F008AF628 /* VideoHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoHomeViewController.h; sourceTree = "<group>"; };
+		9730F3A22D57CF0F008AF628 /* VideoHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoHomeViewController.m; sourceTree = "<group>"; };
+		9730F3A42D57D5D2008AF628 /* UIWindow+RootSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+RootSetting.h"; sourceTree = "<group>"; };
+		9730F3A52D57D5D2008AF628 /* UIWindow+RootSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+RootSetting.m"; sourceTree = "<group>"; };
 		B977F9172DCDDB8EF78DCC79 /* libPods-CJMediaPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJMediaPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58A6CC4D6F81648A428C2EE /* Pods-CJMediaPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMediaPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJMediaPlayerDemo/Pods-CJMediaPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -345,6 +351,8 @@
 			children = (
 				7859D0381E5B5DFC00366FAC /* AppDelegate.h */,
 				7859D0391E5B5DFC00366FAC /* AppDelegate.m */,
+				9730F3A42D57D5D2008AF628 /* UIWindow+RootSetting.h */,
+				9730F3A52D57D5D2008AF628 /* UIWindow+RootSetting.m */,
 				782709FC1E87258200E21433 /* CJPlayer */,
 				78FB79181E850F48007B7120 /* TBPlayer */,
 				78FB78FF1E850E67007B7120 /* CJMediaCacheKit */,
@@ -394,6 +402,8 @@
 		78DD701B1E8365A50051C68D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9730F3A12D57CF0F008AF628 /* VideoHomeViewController.h */,
+				9730F3A22D57CF0F008AF628 /* VideoHomeViewController.m */,
 				78DD701C1E8365A50051C68D /* DemoNavigationController.h */,
 				78DD701D1E8365A50051C68D /* DemoNavigationController.m */,
 				782709131E86FB6700E21433 /* VideoListViewController.h */,
@@ -477,7 +487,7 @@
 			isa = PBXGroup;
 			children = (
 				78FB79001E850E67007B7120 /* Cache */,
-				78FB79071E850E67007B7120 /* MTAVCacheKit.h */,
+				78FB79071E850E67007B7120 /* CJAVCacheKit.h */,
 				78FB79081E850E67007B7120 /* CJAVAssetResourceLoaderManager.h */,
 				78FB79091E850E67007B7120 /* CJAVAssetResourceLoaderManager.m */,
 				78FB790A1E850E67007B7120 /* CJAVUtil.h */,
@@ -495,8 +505,8 @@
 				78FB79021E850E67007B7120 /* CJAVResourceCache.m */,
 				78FB79031E850E67007B7120 /* CJAVResourceDataBlock.h */,
 				78FB79041E850E67007B7120 /* CJAVResourceDataBlock.m */,
-				78FB79051E850E67007B7120 /* MTAVResourceInfo.h */,
-				78FB79061E850E67007B7120 /* MTAVResourceInfo.m */,
+				78FB79051E850E67007B7120 /* CJAVResourceInfo.h */,
+				78FB79061E850E67007B7120 /* CJAVResourceInfo.m */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -568,7 +578,6 @@
 				7859D02E1E5B5DFC00366FAC /* Sources */,
 				7859D02F1E5B5DFC00366FAC /* Frameworks */,
 				7859D0301E5B5DFC00366FAC /* Resources */,
-				D69EA9665E80D9ADBD3FC52B /* [CP] Embed Pods Frameworks */,
 				17F48E1ED5FF422F7B2C9AEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -646,6 +655,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -722,28 +732,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJMediaPlayerDemo/Pods-CJMediaPlayerDemo-resources.sh",
+				"${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-calendar.png",
+				"${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-folder.png",
+				"${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-home.png",
+				"${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-menu.png",
+				"${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-settings.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icons8-calendar.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icons8-folder.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icons8-home.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icons8-menu.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icons8-settings.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJMediaPlayerDemo/Pods-CJMediaPlayerDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D69EA9665E80D9ADBD3FC52B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJMediaPlayerDemo/Pods-CJMediaPlayerDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CJMediaPlayerDemo/Pods-CJMediaPlayerDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED71C23DF79968918A26F81A /* [CP] Check Pods Manifest.lock */ = {
@@ -752,13 +758,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CJMediaPlayerDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -791,10 +800,11 @@
 				78DD70361E8365A50051C68D /* VideoListCell.m in Sources */,
 				78FB79141E850E67007B7120 /* CJAVAssetResourceLoaderManager.m in Sources */,
 				782709F81E87204F00E21433 /* CJMediaPlayer.m in Sources */,
-				78FB79131E850E67007B7120 /* MTAVResourceInfo.m in Sources */,
+				78FB79131E850E67007B7120 /* CJAVResourceInfo.m in Sources */,
 				782709F91E87204F00E21433 /* CJVideoView.m in Sources */,
 				78FB79541E85295D007B7120 /* VideoTableViewCell.m in Sources */,
 				78DD70581E83661B0051C68D /* CJPlayerController.m in Sources */,
+				9730F3A32D57CF0F008AF628 /* VideoHomeViewController.m in Sources */,
 				78FB79271E850F48007B7120 /* XCHudHelper.m in Sources */,
 				7827090C1E86935600E21433 /* TestDataUtil.m in Sources */,
 				78FB79511E852956007B7120 /* VideoModel.m in Sources */,
@@ -803,6 +813,7 @@
 				7859D0371E5B5DFC00366FAC /* main.m in Sources */,
 				78FB79241E850F48007B7120 /* TBloaderURLConnection.m in Sources */,
 				78DD705C1E83661B0051C68D /* CJLoadingProgressView.m in Sources */,
+				9730F3A62D57D5D2008AF628 /* UIWindow+RootSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

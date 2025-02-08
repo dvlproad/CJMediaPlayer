@@ -1,5 +1,5 @@
 //
-//  MTAVResourceLoader.h
+//  CJAVAssetResourceLoaderManager.h
 //  CJMediaPlayerDemo
 //
 //  Created by dvlproad on 16/3/9.

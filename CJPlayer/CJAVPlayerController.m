@@ -1,5 +1,5 @@
 //
-//  MTAVPlayer.m
+//  CJAVPlayerController.m
 //  CJMediaPlayerDemo
 //
 //  Created by dvlproad on 16/3/9.
@@ -8,7 +8,7 @@
 
 #import "CJAVPlayerController.h"
 
-#import "MTAVCacheKit.h"
+#import "CJAVCacheKit.h"
 
 
 NSString *const kMTVideoKVOPath_Status                      = @"status";
@@ -96,7 +96,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
                                                       otherButtonTitles:nil, nil];
             [alertView show];
             
-            weakSelf.curPlayerView.playerStatus = MTAVPlayerStateUnStart;
+            weakSelf.curPlayerView.playerStatus = CJAVPlayerStateUnStart;
             
             
         };
@@ -107,7 +107,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
             NSLog(@"文件不存在");
             NSLog(@"***************************");
             
-            weakSelf.curPlayerView.playerStatus = MTAVPlayerStateUnStart;
+            weakSelf.curPlayerView.playerStatus = CJAVPlayerStateUnStart;
             
         };
         
@@ -193,7 +193,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
     //开始播放
     [self.curPlayer play];
 
-    self.curPlayerView.playerStatus = MTAVPlayerStateBuffering;
+    self.curPlayerView.playerStatus = CJAVPlayerStateBuffering;
 
 }
 
@@ -210,7 +210,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
     [self.curPlayer play];
     
     //缓冲
-    self.curPlayerView.playerStatus = MTAVPlayerStateBuffering;
+    self.curPlayerView.playerStatus = CJAVPlayerStateBuffering;
 }
 
 
@@ -225,7 +225,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
     [self.curPlayer pause];
     
     //暂停
-    self.curPlayerView.playerStatus = MTAVPlayerStatePause;
+    self.curPlayerView.playerStatus = CJAVPlayerStatePause;
 }
 
 
@@ -240,7 +240,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
     [self.curPlayer pause];
     
     //暂停
-    self.curPlayerView.playerStatus = MTAVPlayerStateSlidePause;
+    self.curPlayerView.playerStatus = CJAVPlayerStateSlidePause;
 }
 
 
@@ -250,7 +250,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
 {
     
     //停止(先设置状态，请清理)
-    self.curPlayerView.playerStatus = MTAVPlayerStateUnStart;
+    self.curPlayerView.playerStatus = CJAVPlayerStateUnStart;
     
     [self releasePlayer];
 }
@@ -260,7 +260,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
 - (void)seekToTime:(CGFloat)seconds
 {
     
-    if (self.curPlayerView.playerStatus == MTAVPlayerStateUnStart) {
+    if (self.curPlayerView.playerStatus == CJAVPlayerStateUnStart) {
         return;
     }
     
@@ -273,7 +273,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
     [self.curPlayer seekToTime:CMTimeMakeWithSeconds(seconds, NSEC_PER_SEC) completionHandler:^(BOOL finished) {
         
         
-        if (weakSelf.curPlayerView.playerStatus != MTAVPlayerStatePause) {
+        if (weakSelf.curPlayerView.playerStatus != CJAVPlayerStatePause) {
            
             weakSelf.isPauseByUser = NO;
             [weakSelf.curPlayer play];
@@ -281,11 +281,11 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
             if (!weakSelf.curPlayerItem.isPlaybackLikelyToKeepUp) {
                 
                 //通知UI正在缓冲
-                weakSelf.curPlayerView.playerStatus = MTAVPlayerStateBuffering;
+                weakSelf.curPlayerView.playerStatus = CJAVPlayerStateBuffering;
                 
             } else {
                 
-                weakSelf.curPlayerView.playerStatus = MTAVPlayerStatePlaying;
+                weakSelf.curPlayerView.playerStatus = CJAVPlayerStatePlaying;
             }
             
         }
@@ -375,7 +375,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
         if ([playerItem status] == AVPlayerStatusReadyToPlay) {
             
             //给播放器添加计时器
-           self.curPlayerView.playerStatus = MTAVPlayerStatePlaying;
+           self.curPlayerView.playerStatus = CJAVPlayerStatePlaying;
             [self monitoringPlayback:playerItem];
             
         } else if ([playerItem status] == AVPlayerStatusFailed || [playerItem status] == AVPlayerStatusUnknown) {
@@ -395,7 +395,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
         if (playerItem.isPlaybackBufferEmpty) {
             
             //缓冲几秒
-            self.curPlayerView.playerStatus = MTAVPlayerStateBuffering;
+            self.curPlayerView.playerStatus = CJAVPlayerStateBuffering;
             [self bufferingSomeSecond];
 
         }
@@ -432,7 +432,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
         
 
         if (strongSelf.isPauseByUser == NO) {
-            strongSelf.curPlayerView.playerStatus = MTAVPlayerStatePlaying;
+            strongSelf.curPlayerView.playerStatus = CJAVPlayerStatePlaying;
         }
         
         //不相等的时候才更新

@@ -1,5 +1,5 @@
 //
-//  MTAVResourceConnection.m
+//  CJAVResourceRequest.m
 //  CJMediaPlayerDemo
 //
 //  Created by dvlproad on 16/3/15.
@@ -22,7 +22,7 @@
 
 
 @property(nonatomic, assign)NSInteger reconnectTimes;           //重连次数
-@property(nonatomic, weak)MTAVResourceInfo *curResourceInfo;    //当前资源信息
+@property(nonatomic, weak) CJAVResourceInfo *curResourceInfo;    //当前资源信息
 
 @property(nonatomic, strong)NSMutableData *cacheData;           //缓存请求返回的数据,减少文件IO操作
 @property(nonatomic, assign)NSInteger descChangedTimes;        //视频描述变化次数,用于减少文件IO操作
@@ -33,7 +33,7 @@
 @implementation CJAVResourceRequest
 
 
-- (instancetype)initWithResourceInfo:(MTAVResourceInfo *)resourceInfo
+- (instancetype)initWithResourceInfo:(CJAVResourceInfo *)resourceInfo
                               Offset:(int64_t)offset
                               Length:(int64_t)len {
     self = [super init];
@@ -174,7 +174,7 @@ didReceiveResponse:(NSURLResponse *)response
 
     //1级缓存，减少文件IO操作，降低CPU
     [self.cacheData appendData:data];
-    if ([self.cacheData length] < [MTAVResourceInfo segmentLength]) {
+    if ([self.cacheData length] < [CJAVResourceInfo segmentLength]) {
         return;
     }
 
@@ -187,7 +187,7 @@ didReceiveResponse:(NSURLResponse *)response
     
     //判断下载的数据是否大于一个片段，如果大于则更新resourceInfo
     BOOL flag = NO;
-    int64_t segLen = [MTAVResourceInfo segmentLength];
+    int64_t segLen = [CJAVResourceInfo segmentLength];
     while (self.downLoadSize >= segLen) {
         
         flag = YES;
@@ -208,7 +208,7 @@ didReceiveResponse:(NSURLResponse *)response
         self.resourceLoaderDataUpdate();
     }
     
-    self.curResourceInfo.status = MTAVResourceInfoStatus_Partial;
+    self.curResourceInfo.status = CJAVResourceInfoStatus_Partial;
     self.descChangedTimes++;
     
     
@@ -256,14 +256,14 @@ didCompleteWithError:(NSError *)error {
     ////判断是否为最后一个片段下载完成
     if (self.curOffset >= self.curResourceInfo.contentLength - 1) {
         
-        int64_t segment = self.curOffset / [MTAVResourceInfo segmentLength];
+        int64_t segment = self.curOffset / [CJAVResourceInfo segmentLength];
         [self.curResourceInfo.segmentSet removeObject:@(segment)];
     }
     
     
     //判断所有片段是否下载完成
     if ([self.curResourceInfo.segmentSet count] == 0) {
-        self.curResourceInfo.status = MTAVResourceInfoStatus_Whole;
+        self.curResourceInfo.status = CJAVResourceInfoStatus_Whole;
         
     }
     

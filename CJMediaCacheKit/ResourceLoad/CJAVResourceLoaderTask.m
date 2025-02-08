@@ -8,7 +8,7 @@
 
 #import "CJAVResourceLoaderTask.h"
 #import "CJAVResourceCache.h"
-#import "MTAVResourceInfo.h"
+#import "CJAVResourceInfo.h"
 #import "CJAVUtil.h"
 
 
@@ -47,9 +47,9 @@ const NSInteger MaxConnectNum = 1;
         NSString *cacheDescPath = [CJAVResourceCache cachedDescPathByURL:url];
         
         //从缓存中读取AVResource信息
-        self.curResourceInfo = [MTAVResourceInfo resourceInfoFromCacheWithDescPath:cacheDescPath];
+        self.curResourceInfo = [CJAVResourceInfo resourceInfoFromCacheWithDescPath:cacheDescPath];
         if (self.curResourceInfo == nil) {
-            self.curResourceInfo = [[MTAVResourceInfo alloc] init];
+            self.curResourceInfo = [[CJAVResourceInfo alloc] init];
             self.curResourceInfo.url = [url copy];
         }
 
@@ -208,7 +208,7 @@ const NSInteger MaxConnectNum = 1;
 
     //如果请求的currentOffset比当前缓存的末尾位置还大300k，则认为用户往后拖
     //如果请求的currentOffset比当前缓存的起始位置还小，则认为用户往前拖
-    BOOL isBackward = tempLoadingReq.curOffset + [MTAVResourceInfo seekInterval] < tempBlock.offset;
+    BOOL isBackward = tempLoadingReq.curOffset + [CJAVResourceInfo seekInterval] < tempBlock.offset;
     BOOL isForward = tempBlock.offset < tempLoadingReq.startPosition;
     
     
@@ -222,7 +222,7 @@ const NSInteger MaxConnectNum = 1;
         for (long i = 1; i < [self.requestArr count]; ++i) {
             
             tempLoadingReq = self.requestArr[i];
-            isBackward = tempLoadingReq.curOffset + [MTAVResourceInfo seekInterval] < tempBlock.offset;
+            isBackward = tempLoadingReq.curOffset + [CJAVResourceInfo seekInterval] < tempBlock.offset;
             
             if (isBackward) {
                 [beCancelRequestArr addObject:tempLoadingReq];
@@ -341,7 +341,7 @@ const NSInteger MaxConnectNum = 1;
 
 - (BOOL)hasCached
 {
-    return self.curResourceInfo.status != MTAVResourceInfoStatus_None;
+    return self.curResourceInfo.status != CJAVResourceInfoStatus_None;
 }
 
 

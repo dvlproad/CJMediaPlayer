@@ -11,6 +11,8 @@
 #import <PureLayout/PureLayout.h>
 #import <AVFoundation/AVFoundation.h>
 
+#import "TestDataUtil.h"
+
 @interface VideoViewController ()
 
 @property (nonatomic, strong) UIButton *buttonCancel;
@@ -96,7 +98,9 @@
     }
 
     //下面的URL为测试URL
-    NSURL *URL = [NSURL URLWithString:@"http://tb-video.bdstatic.com/tieba-smallvideo/86_671b0a2e1eab73e48eb3aafcbae5dcaa.mp4"];
+    VideoModel *videoModel = [TestDataUtil getTestVideoModels].firstObject;
+    NSString *Url = videoModel.videoFile.networkAbsoluteUrl;
+    NSURL *URL = [NSURL URLWithString:Url];
     [self.zhiPlayerView setVideoURL:URL
                          coverImage:nil
                           needCache:YES

@@ -15,15 +15,15 @@ typedef NSString *(^GetVideoUrl)();
 
 
 //播放器的状态
-typedef NS_ENUM(NSInteger, MTAVPlayerState) {
+typedef NS_ENUM(NSInteger, CJAVPlayerState) {
     
-    MTAVPlayerStateUnStart      = 0,       /** 未开始, 显示海报 */
+    CJAVPlayerStateUnStart      = 0,       /** 未开始, 显示海报 */
     
-    MTAVPlayerStateBuffering    = 1,       /** 缓冲 */
-    MTAVPlayerStatePlaying      = 2,       /** 播放中 */
+    CJAVPlayerStateBuffering    = 1,       /** 缓冲 */
+    CJAVPlayerStatePlaying      = 2,       /** 播放中 */
 
-    MTAVPlayerStatePause        = 3,       /** 暂停 */
-    MTAVPlayerStateSlidePause   = 4,       /** 滑动暂停 */
+    CJAVPlayerStatePause        = 3,       /** 暂停 */
+    CJAVPlayerStateSlidePause   = 4,       /** 滑动暂停 */
 
 };
 
@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, MTAVPlayerState) {
 @property(nonatomic, copy)GetVideoUrl getVideoUrl;
 
 @property (nonatomic ,strong) AVPlayer *player;                         //播放器
-@property (nonatomic, assign) MTAVPlayerState playerStatus;             //播放状态
+@property (nonatomic, assign) CJAVPlayerState playerStatus;             //播放状态
 
 
 

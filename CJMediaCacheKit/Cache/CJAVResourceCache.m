@@ -1,5 +1,5 @@
 //
-//  MTAVRourceCacheManager.m
+//  CJAVResourceCacheManager.m
 //  CJMediaPlayerDemo
 //
 //  Created by dvlproad on 16/3/9.

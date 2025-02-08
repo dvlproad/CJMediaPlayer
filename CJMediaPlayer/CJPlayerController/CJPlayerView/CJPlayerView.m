@@ -37,14 +37,15 @@
         _coverImageView.translatesAutoresizingMaskIntoConstraints = NO;
         [_coverImageView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
         
-        _maskView = [[CJPlayerMaskView alloc] initWithFrame:CGRectZero];
-        _maskView.delegate = self;
-        [self addSubview:_maskView];
-        _maskView.translatesAutoresizingMaskIntoConstraints = NO;
-        [_maskView autoPinEdgeToSuperviewEdge:ALEdgeTop];
-        [_maskView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
-        [_maskView autoPinEdgeToSuperviewEdge:ALEdgeRight];
-        [_maskView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+        CJPlayerMaskView *maskView = [[CJPlayerMaskView alloc] initWithFrame:CGRectZero];
+        maskView.delegate = self;
+        [self addSubview:maskView];
+        maskView.translatesAutoresizingMaskIntoConstraints = NO;
+        [maskView autoPinEdgeToSuperviewEdge:ALEdgeTop];
+        [maskView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+        [maskView autoPinEdgeToSuperviewEdge:ALEdgeRight];
+        [maskView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+        self.maskView = maskView;
     }
     return self;
 }

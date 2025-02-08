@@ -8,7 +8,7 @@
 
 #import "CJMediaPlayer.h"
 #import <AVFoundation/AVFoundation.h>
-#import "TransitionKit.h"
+#import <TransitionKit/TransitionKit.h>
 
 //#import "MCResourceLoaderManager.h"
 #import "CJAVAssetResourceLoaderManager.h"

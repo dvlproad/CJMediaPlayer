@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
-#import "MTAVResourceInfo.h"
+#import "CJAVResourceInfo.h"
 #import "CJAVResourceRequest.h"
 
 
@@ -25,7 +25,7 @@
 @property(nonatomic, copy)ResourceLoaderDataNotExistBlock resourceLoaderDataNotExist;
 
 /** 当前媒体缓存信息 */
-@property(nonatomic, strong)MTAVResourceInfo *curResourceInfo;
+@property(nonatomic, strong) CJAVResourceInfo *curResourceInfo;
 
 /**
  *  初始化

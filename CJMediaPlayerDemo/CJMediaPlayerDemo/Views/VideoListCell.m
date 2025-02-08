@@ -59,6 +59,8 @@
 }
 
 - (void)prepareForReuse {
+    [super prepareForReuse];
+    
     for (UIView *subView in self.videoBackgroundView.subviews) {
         [subView removeFromSuperview];
     }

@@ -8,7 +8,6 @@
 
 #import "VideoListViewController.h"
 #import <PureLayout/PureLayout.h>
-#import <SDWebImage/UIImageView+WebCache.h>
 #import "VideoListCell.h"
 #import "CJPlayerController.h"
 #import "TestDataUtil.h"
