@@ -1,6 +1,5 @@
 PODS:
   - CJBaseUIKit/CJSlider/CJPlayerSlider (0.0.7)
-  - CJFoundation/NSString (0.0.1)
   - CQDemoKit/BaseUIKit (0.7.2):
     - Masonry
   - CQDemoKit/BaseUtil (0.7.2)
@@ -39,7 +38,6 @@ PODS:
 
 DEPENDENCIES:
   - CJBaseUIKit/CJSlider/CJPlayerSlider (~> 0.0.7)
-  - CJFoundation/NSString (~> 0.0.1)
   - CQDemoKit/BaseVC (~> 0.7.2)
   - MBProgressHUD (~> 0.9)
   - PureLayout (~> 2.0.6)
@@ -48,7 +46,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - CJBaseUIKit
-    - CJFoundation
     - CQDemoKit
     - Masonry
     - MBProgressHUD
@@ -57,13 +54,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   CJBaseUIKit: bdb2d95fff70560a0035c04cb74bafb38fc86ae4
-  CJFoundation: fe34fab71f9e931443a837106fc7d2573f3d26d0
   CQDemoKit: f68954900d83951fa76bd6f36fb5a0504421661b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   PureLayout: f25f0bb904d5ccfe6e31da3cb869185259f02e0d
   TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
 
-PODFILE CHECKSUM: e90e3bc0014b6a3dc3d74624ba900e70e9052c57
+PODFILE CHECKSUM: 71bfa778dd742d5437ccf66e67a1b8562b335c7a
 
 COCOAPODS: 1.16.2

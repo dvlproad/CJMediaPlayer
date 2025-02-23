@@ -7,6 +7,7 @@
 //
 
 #import "VideoArrayViewController.h"
+#import "TestDataUtil.h"
 
 #import "VideoModel.h"
 #import "VideoTableViewCell.h"
@@ -15,8 +16,8 @@
 @interface VideoArrayViewController ()
 
 
-@property(nonatomic, strong)NSArray *videoArr;
-@property(nonatomic, strong)NSIndexPath *curPlayIndexPath;
+@property(nonatomic, strong) NSArray *videoModels;
+@property(nonatomic, strong) NSIndexPath *curPlayIndexPath;
 
 @end
 
@@ -29,18 +30,7 @@
     
     self.curPlayIndexPath = nil;
     
-    self.videoArr =
-    @[
-      
-      [[VideoModel alloc] initWithVideoUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/86_671b0a2e1eab73e48eb3aafcbae5dcaa.mp4"],
-      [[VideoModel alloc] initWithVideoUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/86_671b0a2e1eab73e48eb3aafcbae5dcaa.mp4"],
-
-      [[VideoModel alloc] initWithVideoUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/86_671b0a2e1eab73e48eb3aafcbae5dcaa.mp4"],
-      [[VideoModel alloc] initWithVideoUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/86_671b0a2e1eab73e48eb3aafcbae5dcaa.mp4"],
-      
-      [[VideoModel alloc] initWithVideoUrl:@"http://tb-video.bdstatic.com/tieba-smallvideo/86_671b0a2e1eab73e48eb3aafcbae5dcaa.mp4"],
-    ];
-    
+    self.videoModels = [TestDataUtil getTestVideoModels];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,7 +48,7 @@
     if (![self.curPlayIndexPath isEqual:indexPath]) {
         [cell reset];
     }
-    cell.videoModel = self.videoArr[indexPath.row];
+    cell.videoModel = self.videoModels[indexPath.row];
 }
 
 
@@ -69,7 +59,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.videoArr.count;
+    return self.videoModels.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

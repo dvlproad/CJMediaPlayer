@@ -15,8 +15,8 @@
 
 @interface VideoTableViewCell : UITableViewCell
 
-@property(nonatomic, weak)VideoModel *videoModel;
-@property(nonatomic, strong)CJAVPlayerView *playerView;
+@property(nonatomic, weak) VideoModel *videoModel;
+@property(nonatomic, strong) CJAVPlayerView *playerView;
 
 + (CGFloat)cellHeight;
 

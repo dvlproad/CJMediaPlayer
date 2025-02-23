@@ -20,8 +20,13 @@
     return videoPreviewImage;
 }
 
-- (id)initWithVideoUrl:(NSString *)URL {
-    return nil;
+- (id)initWithVideoUrl:(NSString *)Url {
+    self = [super init];
+    if (self) {
+        self.videoFile = [[CJFileModel alloc] initWithNetworkAbsoluteUrl:Url];
+//        self.firstFrameImageFile = [[CJFileModel alloc] initWithURL:URL];
+    }
+    return self;
 }
 
 @end

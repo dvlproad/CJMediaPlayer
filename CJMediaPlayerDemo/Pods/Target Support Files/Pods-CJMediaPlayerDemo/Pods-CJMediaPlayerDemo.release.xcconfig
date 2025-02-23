@@ -1,9 +1,9 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CJBaseUIKit" "${PODS_ROOT}/Headers/Public/CJFoundation" "${PODS_ROOT}/Headers/Public/CQDemoKit" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/PureLayout" "${PODS_ROOT}/Headers/Public/TransitionKit"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CJBaseUIKit" "${PODS_CONFIGURATION_BUILD_DIR}/CJFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/CQDemoKit" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/PureLayout" "${PODS_CONFIGURATION_BUILD_DIR}/TransitionKit"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"CJBaseUIKit" -l"CJFoundation" -l"CQDemoKit" -l"MBProgressHUD" -l"Masonry" -l"PureLayout" -l"TransitionKit" -framework "CoreGraphics" -framework "Foundation" -framework "UIKit"
-OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/CJBaseUIKit" "-F${PODS_CONFIGURATION_BUILD_DIR}/CJFoundation" "-F${PODS_CONFIGURATION_BUILD_DIR}/CQDemoKit" "-F${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "-F${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "-F${PODS_CONFIGURATION_BUILD_DIR}/PureLayout" "-F${PODS_CONFIGURATION_BUILD_DIR}/TransitionKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CJBaseUIKit" "${PODS_ROOT}/Headers/Public/CQDemoKit" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/PureLayout" "${PODS_ROOT}/Headers/Public/TransitionKit"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CJBaseUIKit" "${PODS_CONFIGURATION_BUILD_DIR}/CQDemoKit" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "${PODS_CONFIGURATION_BUILD_DIR}/PureLayout" "${PODS_CONFIGURATION_BUILD_DIR}/TransitionKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CJBaseUIKit" -l"CQDemoKit" -l"MBProgressHUD" -l"Masonry" -l"PureLayout" -l"TransitionKit" -framework "CoreGraphics" -framework "Foundation" -framework "UIKit"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/CJBaseUIKit" "-F${PODS_CONFIGURATION_BUILD_DIR}/CQDemoKit" "-F${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "-F${PODS_CONFIGURATION_BUILD_DIR}/Masonry" "-F${PODS_CONFIGURATION_BUILD_DIR}/PureLayout" "-F${PODS_CONFIGURATION_BUILD_DIR}/TransitionKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -74,25 +74,32 @@
         [sectionDataModels addObject:sectionDataModel];
     }
     
-    // avplayerVC
+    // 其他
     {
         CQDMSectionDataModel *sectionDataModel = [[CQDMSectionDataModel alloc] init];
-        sectionDataModel.theme = @"avplayerVC";
+        sectionDataModel.theme = @"其他";
+        
+        {
+            CQDMModuleModel *requestModule = [[CQDMModuleModel alloc] init];
+            requestModule.title = @"VideoArrayViewController";
+            //requestModule.classEntry = [VideoListViewController class];
+            requestModule.actionBlock = ^{
+                VideoArrayViewController *viewController = [[VideoArrayViewController alloc] init];
+                [self.navigationController pushViewController:viewController animated:YES];
+            };
+            [sectionDataModel.values addObject:requestModule];
+        }
         
         {
             CQDMModuleModel *requestModule = [[CQDMModuleModel alloc] init];
             requestModule.title = @"avplayerVC";
             //requestModule.classEntry = [VideoListViewController class];
             requestModule.actionBlock = ^{
-            //    VideoArrayViewController *viewController = [[VideoArrayViewController alloc] init];
-            //    [self.navigationController pushViewController:viewController animated:YES];
-                
                 avplayerVC *vc = [[avplayerVC alloc] init];
                 [self presentViewController:vc animated:NO completion:nil];
             };
             [sectionDataModel.values addObject:requestModule];
         }
-        
         
         [sectionDataModels addObject:sectionDataModel];
     }

@@ -6,14 +6,12 @@ platform :ios, '9.0'
 #xcodeproj ‘./CJMediaPlayer.xcodeproj'
 
 target ‘CJMediaPlayerDemo’ do
-    pod 'TransitionKit'
     pod 'CQDemoKit',          '~> 0.7.2',      :subspecs => ['BaseVC']
     
+    pod 'CJBaseUIKit/CJSlider/CJPlayerSlider', '~> 0.0.7'
+    pod 'TransitionKit'
     pod 'MBProgressHUD',      '~> 0.9'
     pod 'PureLayout',           '~> 2.0.6'
-    
-    pod 'CJBaseUIKit/CJSlider/CJPlayerSlider', '~> 0.0.7'
-    pod 'CJFoundation/NSString', '~> 0.0.1' #实际上顶多只用到了NSString里面的CJEncoding
     
 #    pod 'TBPlayer',    '~> 1.0'
 
