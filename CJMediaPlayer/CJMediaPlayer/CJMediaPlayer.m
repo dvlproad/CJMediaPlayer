@@ -11,8 +11,8 @@
 #import <TransitionKit/TransitionKit.h>
 
 //#import "MCResourceLoaderManager.h"
-#import "CJAVAssetResourceLoaderManager.h"
-#import "CJAVUtil.h"
+#import <CJMediaCacheKit/CJAVAssetResourceLoaderManager.h>
+#import <CJMediaCacheKit/CJAVUtil.h>
 
 #define MPIOSVersion ([[[[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."] firstObject] floatValue])
 

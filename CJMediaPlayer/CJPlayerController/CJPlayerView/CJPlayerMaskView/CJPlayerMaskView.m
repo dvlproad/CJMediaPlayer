@@ -7,8 +7,7 @@
 //
 
 #import "CJPlayerMaskView.h"
-
-#import <PureLayout.h>
+#import <PureLayout/PureLayout.h>
 
 @interface CJPlayerMaskView ()<CJPlayerSliderDelegate>
 

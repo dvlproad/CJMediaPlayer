@@ -70,7 +70,7 @@ static NSString *fakeSchemePrefix = @"streaming";
  *  @return 伪URL
  */
 + (NSURL *)fakeUrl:(NSURL *)realUrl {
-    NSURLComponents *components = [[NSURLComponents alloc]initWithURL:realUrl resolvingAgainstBaseURL:NO];
+    NSURLComponents *components = [[NSURLComponents alloc] initWithURL:realUrl resolvingAgainstBaseURL:NO];
     
     NSString *scheme = components.scheme;
     scheme = [fakeSchemePrefix stringByAppendingString:scheme];

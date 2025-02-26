@@ -310,9 +310,13 @@ static NSString *kKVOKeyPathPlayerStatus = @"playerStatus";
     [self.playProgressSlider setHidden:NO];
 
     //获取URL,并开始播放
-    NSString *url = self.getVideoUrl();
+    NSURL *URL = self.getVideoPlayURL();
+    if (!URL) {
+        NSLog(@"❌播放失败，URL为空");
+        return;
+    }
     CJAVPlayerController *playerController = [CJAVPlayerController sharedInstance];
-    [playerController playWithMediaUrl:[NSURL URLWithString:url] OnPlayerView:self];
+    [playerController playWithMediaUrl:URL OnPlayerView:self];
 
 }
 

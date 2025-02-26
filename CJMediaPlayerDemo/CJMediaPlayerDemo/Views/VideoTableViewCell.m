@@ -7,7 +7,7 @@
 //
 
 #import "VideoTableViewCell.h"
-#import "CJAVPlayerController.h"
+#import <CJPlayer/CJAVPlayerController.h>
 
 @interface VideoTableViewCell ()
 

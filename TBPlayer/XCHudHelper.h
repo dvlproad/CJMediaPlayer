@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #import <MBProgressHUD/MBProgressHUD.h>
 

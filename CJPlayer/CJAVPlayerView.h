@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-
-
-typedef NSString *(^GetVideoUrl)();
 
 
 //播放器的状态
@@ -30,10 +26,11 @@ typedef NS_ENUM(NSInteger, CJAVPlayerState) {
 
 
 
-@interface CJAVPlayerView : UIView
+@interface CJAVPlayerView : UIView {
+    
+}
 
-
-@property(nonatomic, copy)GetVideoUrl getVideoUrl;
+@property (nonatomic, copy) NSURL *(^getVideoPlayURL)();                 // 点击播放时候，要播放的视频地址的获取
 
 @property (nonatomic ,strong) AVPlayer *player;                         //播放器
 @property (nonatomic, assign) CJAVPlayerState playerStatus;             //播放状态

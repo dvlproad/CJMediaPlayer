@@ -97,6 +97,9 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/../../CJPlayer/testPlayIcon.jpg"
+  install_resource "${PODS_ROOT}/../../CJPlayer/testPoster.jpg"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/CJPlayer/CQDemoKit.bundle"
   install_resource "${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-calendar.png"
   install_resource "${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-folder.png"
   install_resource "${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-home.png"
@@ -104,6 +107,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-settings.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/../../CJPlayer/testPlayIcon.jpg"
+  install_resource "${PODS_ROOT}/../../CJPlayer/testPoster.jpg"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/CJPlayer/CQDemoKit.bundle"
   install_resource "${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-calendar.png"
   install_resource "${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-folder.png"
   install_resource "${PODS_ROOT}/CQDemoKit/CQDemoKit/BaseVC/TabBar/Resources/icons8-home.png"

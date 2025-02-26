@@ -1,1 +1,1 @@
-../../../CJBaseUIKit/CJUIKit/CJSlider/CJPlayerSlider/CJPlayerSlider.h
+../../../CJBaseUIKit/CJBaseUIKit/CJSlider/CJPlayerSlider/CJPlayerSlider.h

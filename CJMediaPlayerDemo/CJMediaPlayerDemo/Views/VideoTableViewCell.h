@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "VideoModel.h"
-#import "CJAVPlayerView.h"
+#import <CJPlayer/CJAVPlayerView.h>
 
 @class CJAVPlayerView;
 

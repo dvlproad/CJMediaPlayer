@@ -1,47 +1,55 @@
 PODS:
-  - CJBaseUIKit/CJSlider/CJPlayerSlider (0.0.7)
-  - CQDemoKit/BaseUIKit (0.7.2):
+  - CJBaseUIKit/CJSlider (0.8.0)
+  - CJMediaCacheKit (0.0.1)
+  - CJMediaPlayer (0.0.1):
+    - CJBaseUIKit/CJSlider (~> 0.8.0)
+    - CJMediaCacheKit
+    - PureLayout
+    - TransitionKit
+  - CJPlayer (0.0.1):
+    - CJMediaCacheKit
+  - CQDemoKit/BaseUIKit (0.7.5):
     - Masonry
-  - CQDemoKit/BaseUtil (0.7.2)
-  - CQDemoKit/BaseVC (0.7.2):
-    - CQDemoKit/BaseVC/Base (= 0.7.2)
-    - CQDemoKit/BaseVC/Collection (= 0.7.2)
-    - CQDemoKit/BaseVC/ScrollView (= 0.7.2)
-    - CQDemoKit/BaseVC/TabBar (= 0.7.2)
-    - CQDemoKit/BaseVC/TableView (= 0.7.2)
-    - CQDemoKit/BaseVC/TextView (= 0.7.2)
+  - CQDemoKit/BaseUtil (0.7.5)
+  - CQDemoKit/BaseVC (0.7.5):
+    - CQDemoKit/BaseVC/Base (= 0.7.5)
+    - CQDemoKit/BaseVC/Collection (= 0.7.5)
+    - CQDemoKit/BaseVC/ScrollView (= 0.7.5)
+    - CQDemoKit/BaseVC/TabBar (= 0.7.5)
+    - CQDemoKit/BaseVC/TableView (= 0.7.5)
+    - CQDemoKit/BaseVC/TextView (= 0.7.5)
     - CQDemoKit/Helper
-  - CQDemoKit/BaseVC/Base (0.7.2):
+  - CQDemoKit/BaseVC/Base (0.7.5):
     - CQDemoKit/BaseUIKit
     - CQDemoKit/Helper
     - Masonry
-  - CQDemoKit/BaseVC/Collection (0.7.2):
+  - CQDemoKit/BaseVC/Collection (0.7.5):
     - CQDemoKit/BaseVC/Base
     - CQDemoKit/Helper
-  - CQDemoKit/BaseVC/ScrollView (0.7.2):
+  - CQDemoKit/BaseVC/ScrollView (0.7.5):
     - CQDemoKit/BaseVC/Base
     - CQDemoKit/Helper
-  - CQDemoKit/BaseVC/TabBar (0.7.2):
+  - CQDemoKit/BaseVC/TabBar (0.7.5):
     - CQDemoKit/Helper
-  - CQDemoKit/BaseVC/TableView (0.7.2):
+  - CQDemoKit/BaseVC/TableView (0.7.5):
     - CQDemoKit/BaseVC/Base
     - CQDemoKit/Helper
-  - CQDemoKit/BaseVC/TextView (0.7.2):
+  - CQDemoKit/BaseVC/TextView (0.7.5):
     - CQDemoKit/BaseUtil
     - CQDemoKit/BaseVC/Base
     - CQDemoKit/Helper
-  - CQDemoKit/Helper (0.7.2)
+  - CQDemoKit/Helper (0.7.5)
   - Masonry (1.1.0)
   - MBProgressHUD (0.9.2)
-  - PureLayout (2.0.6)
+  - PureLayout (3.1.9)
   - TransitionKit (2.2.1)
 
 DEPENDENCIES:
-  - CJBaseUIKit/CJSlider/CJPlayerSlider (~> 0.0.7)
-  - CQDemoKit/BaseVC (~> 0.7.2)
+  - CJMediaCacheKit (from `../`)
+  - CJMediaPlayer (from `../`)
+  - CJPlayer (from `../`)
+  - CQDemoKit/BaseVC (~> 0.7.5)
   - MBProgressHUD (~> 0.9)
-  - PureLayout (~> 2.0.6)
-  - TransitionKit
 
 SPEC REPOS:
   trunk:
@@ -52,14 +60,25 @@ SPEC REPOS:
     - PureLayout
     - TransitionKit
 
+EXTERNAL SOURCES:
+  CJMediaCacheKit:
+    :path: "../"
+  CJMediaPlayer:
+    :path: "../"
+  CJPlayer:
+    :path: "../"
+
 SPEC CHECKSUMS:
-  CJBaseUIKit: bdb2d95fff70560a0035c04cb74bafb38fc86ae4
-  CQDemoKit: f68954900d83951fa76bd6f36fb5a0504421661b
+  CJBaseUIKit: 1aae41e618536f39628c79a7461f48e6979b8a5e
+  CJMediaCacheKit: 0cb62830e0e8364f7a897e1036308e613d53f2e8
+  CJMediaPlayer: d0fe29ed73a4bae153fa6971b2d5017c0b4b7bdf
+  CJPlayer: e29c9823449224daa93c46f666f52b310fe30168
+  CQDemoKit: 1c1e5b27b6a973ab0b6535f4c3df3164e6c82285
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  PureLayout: f25f0bb904d5ccfe6e31da3cb869185259f02e0d
+  PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
   TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
 
-PODFILE CHECKSUM: 71bfa778dd742d5437ccf66e67a1b8562b335c7a
+PODFILE CHECKSUM: dad217328b58f0479a185b6a33c38437703688b1
 
 COCOAPODS: 1.16.2

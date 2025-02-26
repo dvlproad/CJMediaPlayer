@@ -8,7 +8,7 @@
 
 #import "CJAVPlayerController.h"
 
-#import "CJAVCacheKit.h"
+#import <CJMediaCacheKit/CJAVCacheKit.h>
 
 
 NSString *const kMTVideoKVOPath_Status                      = @"status";
@@ -168,7 +168,7 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
 
 #pragma mark - 播放器操作(播放，暂停，停止)
 
-- (void)playWithMediaUrl:(NSURL *)url OnPlayerView:(CJAVPlayerView *)playerView
+- (void)playWithMediaUrl:(NSURL *)URL OnPlayerView:(CJAVPlayerView *)playerView
 {
 
     //清理上次播放的相关东西
@@ -176,15 +176,24 @@ NSString *const kMTVideoKVOPath_PlaybackLikelyToKeepUp      = @"playbackLikelyTo
 
     self.curPlayerView      = playerView;
     
-
-    //1 创建AVURLAsset
-    NSURL *fakeUrl          = [CJAVUtil fakeUrl:url];
-    self.videoURLAsset      = [AVURLAsset URLAssetWithURL:fakeUrl options:nil];
-    [self.videoURLAsset.resourceLoader setDelegate:self.loaderManager queue:dispatch_get_main_queue()];
+    if ([URL.scheme isEqualToString:@"http"] || [URL.scheme isEqualToString:@"https"]) {
+        NSLog(@"这是一个网络文件");
+        //1 创建AVURLAsset
+        NSURL *fakeUrl          = [CJAVUtil fakeUrl:URL];
+        self.videoURLAsset      = [AVURLAsset URLAssetWithURL:fakeUrl options:nil];
+        [self.videoURLAsset.resourceLoader setDelegate:self.loaderManager queue:dispatch_get_main_queue()];
+        
+        //2 创建AVPlayerItem
+        self.curPlayerItem = [AVPlayerItem playerItemWithAsset:self.videoURLAsset];
+        self.curPlayer     = [AVPlayer playerWithPlayerItem:self.curPlayerItem];
+        
+    } else if ([URL.scheme isEqualToString:@"file"]) {
+        NSLog(@"这是一个本地文件");
+        self.curPlayer     = [AVPlayer playerWithURL:URL];
+    } else {
+        NSLog(@"未知的URL类型");
+    }
     
-    //2 创建AVPlayerItem
-    self.curPlayerItem = [AVPlayerItem playerItemWithAsset:self.videoURLAsset];
-    self.curPlayer     = [AVPlayer playerWithPlayerItem:self.curPlayerItem];
     playerView.player  = self.curPlayer;
 
     //添加所有观察

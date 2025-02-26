@@ -36,4 +36,23 @@
     
 }
 
+#pragma mark - Util
++ (UIViewController *)viewControllWithTitle:(NSString *)title tsview:(UIView *)tsview {
+    UIViewController *viewController = [[UIViewController alloc] init];
+    viewController.view.backgroundColor = [UIColor colorWithRed:105/255.0 green:193/255.0 blue:243/255.0 alpha:1];
+    viewController.title = NSLocalizedString(title, nil);
+
+    // 将 tsview 添加到 viewController.view 中,设置 tsview 的自动布局约束
+    [viewController.view addSubview:tsview];
+    tsview.translatesAutoresizingMaskIntoConstraints = NO;
+    [NSLayoutConstraint activateConstraints:@[
+        [tsview.topAnchor constraintEqualToAnchor:viewController.view.safeAreaLayoutGuide.topAnchor constant:10],
+        [tsview.bottomAnchor constraintEqualToAnchor:viewController.view.bottomAnchor constant:-10],
+        [tsview.leadingAnchor constraintEqualToAnchor:viewController.view.leadingAnchor constant:10],
+        [tsview.trailingAnchor constraintEqualToAnchor:viewController.view.safeAreaLayoutGuide.trailingAnchor constant:-10]
+    ]];
+    
+    return viewController;
+}
+
 @end

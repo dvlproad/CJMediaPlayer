@@ -7,7 +7,6 @@
 //
 
 #import "CJPlayerViewController.h"
-#import <PureLayout.h>
 
 typedef NS_ENUM(NSInteger, LayoutConstraintsStatus){
     LayoutConstraintsStatusOrigin = 0, /**< 初始时候的约束 */
@@ -153,9 +152,10 @@ typedef NS_ENUM(NSInteger, LayoutConstraintsStatus){
     [self.view setNeedsLayout];
     _backgroundView.alpha = 0.0;
     
+    __weak typeof(self) weakSelf = self;
     void (^updates)(void) = ^{
         [self.view layoutIfNeeded];
-        _backgroundView.alpha = 1.0;
+        weakSelf.backgroundView.alpha = 1.0;
     };
     
     void (^completion)(BOOL) = ^(BOOL finished){
@@ -183,15 +183,16 @@ typedef NS_ENUM(NSInteger, LayoutConstraintsStatus){
     
     [self updatePlayerViewLayoutConstraintsForExitFullScreen];
     [self.view setNeedsLayout];
+    __weak typeof(self) weakSelf = self;
     void (^updates)(void) = ^{
         [self.view layoutIfNeeded];
-        _backgroundView.alpha = 0.0;
+        weakSelf.backgroundView.alpha = 0.0;
     };
     
     void (^completion)(BOOL) = ^(BOOL finished){
-        [_targetOldParentView addSubview:playerView];
+        [weakSelf.targetOldParentView addSubview:playerView];
         [self setVideoPlayerViewLayoutConstraints:LayoutConstraintsStatusOrigin];
-        [_targetOldParentView layoutIfNeeded];
+        [weakSelf.targetOldParentView layoutIfNeeded];
         [fromViewController.view removeFromSuperview];
         [transitionContext completeTransition:YES];
     };
@@ -223,14 +224,26 @@ typedef NS_ENUM(NSInteger, LayoutConstraintsStatus){
     CGFloat left = _dismissalTargetFrame.origin.x;
     CGFloat right = CGRectGetWidth(self.view.frame) - CGRectGetMaxX(_dismissalTargetFrame);
     CGFloat bottom = CGRectGetHeight(self.view.frame) - CGRectGetMaxY(_dismissalTargetFrame);
-    [self.videoPlayerView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(top, left, bottom, right)];
+    
+    // 确保 videoPlayerView 和 superview 都已经启用了 AutoLayout
+    self.videoPlayerView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.videoPlayerView.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:top].active = YES;
+    [self.videoPlayerView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:left].active = YES;
+    [self.videoPlayerView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-bottom].active = YES;
+    [self.videoPlayerView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-right].active = YES;
 }
 
 
 - (void)setVideoPlayerViewLayoutConstraints:(LayoutConstraintsStatus)status {
     if (status == LayoutConstraintsStatusFullScreen) {  /** 全屏时候的约束 */
         [self.videoPlayerView removeConstraints:_originVideoPlayerViewLayoutConstraints];
-        [self.videoPlayerView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
+        
+        // 确保 videoPlayerView 使用 Auto Layout , 设置约束，使 videoPlayerView 的四个边与其父视图的四个边对齐（没有内边距）
+        self.videoPlayerView.translatesAutoresizingMaskIntoConstraints = NO;
+        [self.videoPlayerView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
+        [self.videoPlayerView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
+        [self.videoPlayerView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+        [self.videoPlayerView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = YES;
     }else {                                             /** 初始时候的约束 */
         [self.videoPlayerView addConstraints:_originVideoPlayerViewLayoutConstraints];
         [_targetOldParentView addConstraints:_targetOldParentViewLayoutConstraints];

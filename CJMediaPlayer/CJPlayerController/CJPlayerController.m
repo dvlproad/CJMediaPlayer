@@ -10,7 +10,7 @@
 
 #import "CJPlayerViewController.h"
 #import "CJMediaPlayer.h"
-#import "CJPlayerSlider.h"
+#import <CJBaseUIKit/CJPlayerSlider.h>
 #import "CJPlayerManager.h"
 //#import "MTPlayerNetwork.h"
 

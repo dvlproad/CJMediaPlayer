@@ -6,12 +6,13 @@ platform :ios, '9.0'
 #xcodeproj ‘./CJMediaPlayer.xcodeproj'
 
 target ‘CJMediaPlayerDemo’ do
-    pod 'CQDemoKit',          '~> 0.7.2',      :subspecs => ['BaseVC']
+    pod 'CQDemoKit',          '~> 0.7.5',      :subspecs => ['BaseVC']
     
-    pod 'CJBaseUIKit/CJSlider/CJPlayerSlider', '~> 0.0.7'
-    pod 'TransitionKit'
+    pod 'CJPlayer',           :path => '../'
+    pod 'CJMediaPlayer',      :path => '../'
+    pod 'CJMediaCacheKit',    :path => '../'
+    
     pod 'MBProgressHUD',      '~> 0.9'
-    pod 'PureLayout',           '~> 2.0.6'
     
 #    pod 'TBPlayer',    '~> 1.0'
 

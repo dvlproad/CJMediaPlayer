@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.author   = { "dvlproad" => "" }
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "9.0"
  
   s.source       = { :git => "https://github.com/dvlproad/CJMediaPlayer.git", :tag => "CJMediaPlayer_0.0.1" }
   s.source_files  = "CJMediaPlayer/*.{h,m}"
@@ -41,17 +41,11 @@ Pod::Spec.new do |s|
   #s.subspec 'Cache' do |cache|
   #  cache.source_files = 'CJMediaPlayer/CJMediaPlayer/SDK/Cache/**/*'
   #end
-  
+  s.source_files = "CJMediaPlayer/**/*.{h,m}"
+  s.dependency 'CJMediaCacheKit'
 
+  s.dependency 'CJBaseUIKit/CJSlider', '~> 0.8.0'  # CJPlayerSlider
   s.dependency 'TransitionKit'
-  s.dependency 'Toast',              '~> 2.2'
-
-  s.dependency 'AFNetworking',       '~> 2.5.1'
-  s.dependency 'Reachability',       '~> 3.2'
-
-  s.dependency 'CocoaHTTPServer',    '~> 2.3'
-
-  s.dependency 'SDWebImage',         '~> 3.7.2'
-  s.dependency 'MBProgressHUD',      '~> 0.9'  
+  s.dependency 'PureLayout'
 
 end
