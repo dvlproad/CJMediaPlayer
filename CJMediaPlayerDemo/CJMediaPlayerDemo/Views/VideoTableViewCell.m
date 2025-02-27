@@ -28,8 +28,9 @@
     self.playerView.backgroundColor = [UIColor redColor];
     
     __weak typeof(self) weakSelf = self;
-    self.playerView.getVideoUrl = ^NSString *{
-        return [weakSelf.videoModel.videoFile.absoluteURL absoluteString];
+    self.playerView.getVideoPlayURL = ^NSURL *{
+        NSString *Url = [weakSelf.videoModel.videoFile.absoluteURL absoluteString];
+        return [NSURL fileURLWithPath:Url];
     };
 
     [self addSubview:self.playerView];
