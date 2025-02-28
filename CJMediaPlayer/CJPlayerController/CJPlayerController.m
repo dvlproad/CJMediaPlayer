@@ -144,7 +144,7 @@
  *  @param status        播放状态
  */
 - (void)playerManager:(CJPlayerManager *)playerManager statusDidChanged:(CJMediaPlayerStatus)status {
-    NSLog(@"playerManagerStatus = %d", (int)status);
+    NSLog(@"statusDidChanged playerManagerStatus = %d", (int)status);
     // 调整loading view状态
     [self showLoadingAnimationView:status];
     // 调整cover 状态

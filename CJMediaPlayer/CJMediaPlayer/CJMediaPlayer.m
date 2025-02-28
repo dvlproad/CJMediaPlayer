@@ -262,7 +262,7 @@ static const NSTimeInterval kTimeoutDuration = 60.f;
         dispatch_async(dispatch_get_main_queue(), ^(void) {
             NSError *error;
             AVKeyValueStatus status = [asset statusOfValueForKey:Tracks error:&error];
-            NSLog(@"status1 = %ld meaning %@", status, status==3 ? @"Fail" : @"Success");
+            NSLog(@"status1 = %ld meaning %@", status, status==AVKeyValueStatusFailed ? @"Fail" : @"Success");
             if (![url isEqual:self.url])
             {
                 //                NSLog(@"load delay error");
@@ -590,21 +590,25 @@ static const NSTimeInterval kTimeoutDuration = 60.f;
 }
 
 #pragma mark - Interface
-- (BOOL) readyForPlay;
+- (BOOL)readyForPlay
 {
     if (![self.player.currentItem isEqual:self.playerItem]) {
         NSLog(@"![self.player.currentItem isEqual:self.playerItem]");
+        return NO;
     }
+    
     if (self.player.currentItem.status != AVPlayerItemStatusReadyToPlay) {
-        NSLog(@"NO: self.player.currentItem.status != AVPlayerItemStatusReadyToPlay");
+        NSLog(@"NO: self.player.currentItem.status != AVPlayerItemStatusReadyToPlay, self.player.currentItem.status = %ld", (long)self.player.currentItem.status);
+        return NO;
     }
+    
     BOOL readyForDisPlay = [self readyForDisPlay];
     if (!readyForDisPlay) {
         NSLog(@"readyForDisPlay = %@", readyForDisPlay ? @"YES" : @"NO");
+        return NO;
     }
-    return [self.player.currentItem isEqual:self.playerItem]
-    && self.player.currentItem.status == AVPlayerItemStatusReadyToPlay
-    && readyForDisPlay;
+
+    return YES;
 }
 
 - (BOOL) readyForDisPlay

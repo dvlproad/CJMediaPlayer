@@ -190,7 +190,7 @@
 /**
  *  重置播放视图恢复字典，播放视图恢复过之后，重置这个字典。防止错误重置
  */
-- (void)resetRestoreDic; {
+- (void)resetRestoreDic {
     [_mutableRestoreDic removeAllObjects];
 }
 
