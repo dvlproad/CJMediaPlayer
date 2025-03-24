@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "9.0"
 
-  s.source       = { :git => "https://github.com/dvlproad/CJMediaPlayer.git", :tag => "CJMediaCacheKit_0.9.1" }  #CJMediaCacheKit_0.8.0-beta.2
+  s.source       = { :git => "https://github.com/dvlproad/CJMediaPlayer.git", :tag => "CJMediaCacheKit_0.0.1" }  #CJMediaCacheKit_0.8.0-beta.2
   s.source_files  = "CJMediaCacheKit/*.{h,m}"
   s.frameworks = 'UIKit'
 

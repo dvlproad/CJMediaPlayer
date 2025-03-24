@@ -1,5 +1,7 @@
 #
 Pod::Spec.new do |s|
+  #验证方法： pod lib lint CJMediaPlayer.podspec --allow-warnings --use-libraries --verbose
+  #提交方法： pod trunk push CJMediaPlayer.podspec --allow-warnings --use-libraries --verbose
   
   s.name         = "CJMediaPlayer"
   s.version      = "0.0.1"
@@ -44,7 +46,7 @@ Pod::Spec.new do |s|
   s.source_files = "CJMediaPlayer/**/*.{h,m}"
   s.dependency 'CJMediaCacheKit'
 
-  s.dependency 'CJBaseUIKit/CJSlider', '~> 0.8.0'  # CJPlayerSlider
+  s.dependency 'CJBaseUIKit/CJSlider'#, '~> 0.8.0'  # CJPlayerSlider
   s.dependency 'TransitionKit'
   s.dependency 'PureLayout'
 

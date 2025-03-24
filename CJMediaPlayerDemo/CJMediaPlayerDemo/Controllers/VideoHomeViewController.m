@@ -10,6 +10,8 @@
 #import <CQDemoKit/CJUIKitToastUtil.h>
 #import <CQDemoKit/CJUIKitAlertUtil.h>
 
+#import "CJMediaPlayerDemo-Swift.h"
+
 #import "VideoViewController.h"
 #import "VideoListViewController.h"
 #import "DemoNavigationController.h"
@@ -38,7 +40,22 @@
     {
         CQDMSectionDataModel *sectionDataModel = [[CQDMSectionDataModel alloc] init];
         sectionDataModel.theme = @"单个视频的播放";
-        
+        {
+            CQDMModuleModel *requestModule = [[CQDMModuleModel alloc] init];
+            requestModule.title = @"单个视频的播放(系统）";
+            //requestModule.classEntry = [VideoViewController class];
+            requestModule.actionBlock = ^{
+                UIViewController *videoVC;
+                if (@available(iOS 14.0, *)) {
+                    videoVC = [[PhotoVideoPlayerViewController alloc] init];
+                } else {
+                    // Fallback on earlier versions
+                }
+                videoVC.hidesBottomBarWhenPushed = YES;
+                [self.navigationController pushViewController:videoVC animated:YES];
+            };
+            [sectionDataModel.values addObject:requestModule];
+        }
         {
             CQDMModuleModel *requestModule = [[CQDMModuleModel alloc] init];
             requestModule.title = @"单个视频的播放";

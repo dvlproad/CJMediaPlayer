@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "9.0"
 
-  s.source       = { :git => "https://github.com/dvlproad/CJMediaPlayer.git", :tag => "CJPlayer_0.9.1" }  #CJPlayer_0.8.0-beta.2
+  s.source       = { :git => "https://github.com/dvlproad/CJMediaPlayer.git", :tag => "CJPlayer_0.0.1" }  #CJPlayer_0.8.0-beta.2
   s.source_files  = "CJPlayer/*.{h,m}"
   s.frameworks = 'UIKit'
 
@@ -56,13 +56,13 @@ Pod::Spec.new do |s|
   #    'MapBox' => ['MapView/Map/Resources/*.png'],
   #    'OtherResources' => ['MapView/Map/OtherResources/*.png']
   #  }
-  s.resource_bundle = {
-    'CQDemoKit' => [      # CQDemoKit 为生成boudle的名称，可以随便起，但要记住，库里要用
-      'CQDemoKit/Demo_Resource/**/*.{png,jpg,jpeg,gif,svg,mp4}',
-      'CQDemoKit/Demo_Resource/**/*.{xcassets}',
-      'CQDemoKit/BaseVC/**/*.{png,jpg,jpeg}'
-    ]
-  }
+  # s.resource_bundle = {
+  #   'CQDemoKit' => [      # CQDemoKit 为生成boudle的名称，可以随便起，但要记住，库里要用
+  #     'CQDemoKit/Demo_Resource/**/*.{png,jpg,jpeg,gif,svg,mp4}',
+  #     'CQDemoKit/Demo_Resource/**/*.{xcassets}',
+  #     'CQDemoKit/BaseVC/**/*.{png,jpg,jpeg}'
+  #   ]
+  # }
   # s.resources = 会拷贝到mainBundle下
   s.resources = [
     'CJPlayer/**/*.{png,jpg,jpeg,gif,svg,mp4}',

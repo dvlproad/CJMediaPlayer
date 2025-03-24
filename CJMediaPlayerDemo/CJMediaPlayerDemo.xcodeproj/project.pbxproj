@@ -55,6 +55,7 @@
 		78FB794D1E85294C007B7120 /* VideoArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB794C1E85294C007B7120 /* VideoArrayViewController.m */; };
 		78FB79511E852956007B7120 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79501E852956007B7120 /* VideoModel.m */; };
 		78FB79541E85295D007B7120 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FB79531E85295D007B7120 /* VideoTableViewCell.m */; };
+		970147B02D7C6AF600EB8609 /* PhotoVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970147AF2D7C6AF600EB8609 /* PhotoVideoPlayerViewController.swift */; };
 		9730F3A32D57CF0F008AF628 /* VideoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9730F3A22D57CF0F008AF628 /* VideoHomeViewController.m */; };
 		9730F3A62D57D5D2008AF628 /* UIWindow+RootSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 9730F3A52D57D5D2008AF628 /* UIWindow+RootSetting.m */; };
 /* End PBXBuildFile section */
@@ -147,6 +148,8 @@
 		78FB79501E852956007B7120 /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		78FB79521E85295D007B7120 /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTableViewCell.h; sourceTree = "<group>"; };
 		78FB79531E85295D007B7120 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
+		970147AE2D7C6AF600EB8609 /* CJMediaPlayerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CJMediaPlayerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		970147AF2D7C6AF600EB8609 /* PhotoVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVideoPlayerViewController.swift; sourceTree = "<group>"; };
 		9730F3A12D57CF0F008AF628 /* VideoHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoHomeViewController.h; sourceTree = "<group>"; };
 		9730F3A22D57CF0F008AF628 /* VideoHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoHomeViewController.m; sourceTree = "<group>"; };
 		9730F3A42D57D5D2008AF628 /* UIWindow+RootSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+RootSetting.h"; sourceTree = "<group>"; };
@@ -306,6 +309,7 @@
 			children = (
 				9730F3A12D57CF0F008AF628 /* VideoHomeViewController.h */,
 				9730F3A22D57CF0F008AF628 /* VideoHomeViewController.m */,
+				970147AF2D7C6AF600EB8609 /* PhotoVideoPlayerViewController.swift */,
 				78DD701C1E8365A50051C68D /* DemoNavigationController.h */,
 				78DD701D1E8365A50051C68D /* DemoNavigationController.m */,
 				782709131E86FB6700E21433 /* VideoListViewController.h */,
@@ -315,6 +319,7 @@
 				78DD70211E8365A50051C68D /* VideoViewController.m */,
 				78FB794B1E85294C007B7120 /* VideoArrayViewController.h */,
 				78FB794C1E85294C007B7120 /* VideoArrayViewController.m */,
+				970147AE2D7C6AF600EB8609 /* CJMediaPlayerDemo-Bridging-Header.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -453,6 +458,8 @@
 				TargetAttributes = {
 					7859D0311E5B5DFC00366FAC = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8285LLMDV3;
+						LastSwiftMigration = 1620;
 						ProvisioningStyle = Automatic;
 					};
 					7859D04A1E5B5DFC00366FAC = {
@@ -606,6 +613,7 @@
 				78FB794D1E85294C007B7120 /* VideoArrayViewController.m in Sources */,
 				78DD702F1E8365A50051C68D /* VideoViewController.m in Sources */,
 				78FB79231E850F48007B7120 /* avplayerVC.m in Sources */,
+				970147B02D7C6AF600EB8609 /* PhotoVideoPlayerViewController.swift in Sources */,
 				78DD702D1E8365A50051C68D /* DemoNavigationController.m in Sources */,
 				78DD70361E8365A50051C68D /* VideoListCell.m in Sources */,
 				78FB79541E85295D007B7120 /* VideoTableViewCell.m in Sources */,
@@ -768,11 +776,16 @@
 			baseConfigurationReference = F58A6CC4D6F81648A428C2EE /* Pods-CJMediaPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8285LLMDV3;
 				INFOPLIST_FILE = CJMediaPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJMediaPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CJMediaPlayerDemo/Controllers/CJMediaPlayerDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -781,11 +794,15 @@
 			baseConfigurationReference = 27269A6EF1464EB8E3765AFC /* Pods-CJMediaPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8285LLMDV3;
 				INFOPLIST_FILE = CJMediaPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJMediaPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CJMediaPlayerDemo/Controllers/CJMediaPlayerDemo-Bridging-Header.h";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
