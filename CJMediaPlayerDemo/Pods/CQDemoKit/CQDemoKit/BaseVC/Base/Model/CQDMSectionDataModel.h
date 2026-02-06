@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CQDMSectionDataModel : NSObject<NSCopying, NSMutableCopying> {
+@interface CQDMSectionDataModel : NSObject<NSCopying, NSMutableCopying, NSCoding> {
     
 }
 @property (nonatomic, assign) NSInteger type;           /**< section的类型 */

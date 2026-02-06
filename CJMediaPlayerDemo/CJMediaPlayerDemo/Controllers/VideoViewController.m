@@ -48,34 +48,38 @@
         [self.view addSubview:self.zhiPlayerView.view];
         self.zhiPlayerView.view.translatesAutoresizingMaskIntoConstraints = NO;
 
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.zhiPlayerView.view
-                                                              attribute:NSLayoutAttributeTop
-                                                              relatedBy:NSLayoutRelationEqual
-                                                                 toItem:self.view
-                                                              attribute:NSLayoutAttributeTop
-                                                             multiplier:1
-                                                               constant:50]];
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.zhiPlayerView.view
-                                                              attribute:NSLayoutAttributeLeading
-                                                              relatedBy:NSLayoutRelationEqual
-                                                                 toItem:self.view
-                                                              attribute:NSLayoutAttributeLeading
-                                                             multiplier:1
-                                                               constant:20]];
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.zhiPlayerView.view
-                                                              attribute:NSLayoutAttributeTrailing
-                                                              relatedBy:NSLayoutRelationEqual
-                                                                 toItem:self.view
-                                                              attribute:NSLayoutAttributeTrailing
-                                                             multiplier:1
-                                                               constant:-20]];
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.zhiPlayerView.view
-                                                              attribute:NSLayoutAttributeBottom
-                                                              relatedBy:NSLayoutRelationEqual
-                                                                 toItem:self.view
-                                                              attribute:NSLayoutAttributeBottom
-                                                             multiplier:1
-                                                               constant:-50]];
+        [self.view addConstraint:
+         [NSLayoutConstraint constraintWithItem:self.zhiPlayerView.view
+                                      attribute:NSLayoutAttributeTop
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:self.view
+                                      attribute:NSLayoutAttributeTop
+                                     multiplier:1
+                                       constant:50]];
+        [self.view addConstraint:
+         [NSLayoutConstraint constraintWithItem:self.zhiPlayerView.view
+                                      attribute:NSLayoutAttributeLeading
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:self.view
+                                      attribute:NSLayoutAttributeLeading
+                                     multiplier:1
+                                       constant:20]];
+        [self.view addConstraint:
+         [NSLayoutConstraint constraintWithItem:self.zhiPlayerView.view
+                                      attribute:NSLayoutAttributeTrailing
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:self.view
+                                      attribute:NSLayoutAttributeTrailing
+                                     multiplier:1
+                                       constant:-20]];
+        [self.view addConstraint:
+         [NSLayoutConstraint constraintWithItem:self.zhiPlayerView.view
+                                      attribute:NSLayoutAttributeBottom
+                                      relatedBy:NSLayoutRelationEqual
+                                         toItem:self.view
+                                      attribute:NSLayoutAttributeBottom
+                                     multiplier:1
+                                       constant:-50]];
     }
 
     [self.view setNeedsUpdateConstraints];

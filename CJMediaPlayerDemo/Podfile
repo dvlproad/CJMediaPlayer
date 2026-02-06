@@ -1,18 +1,18 @@
 # Uncomment this line to define a global platform for your project
 platform :ios, '9.0'
 
-#inhibit_all_warnings!
+inhibit_all_warnings!
 
 #xcodeproj ‘./CJMediaPlayer.xcodeproj'
 
 target ‘CJMediaPlayerDemo’ do
-    pod 'CQDemoKit',          '~> 0.7.6',      :subspecs => ['BaseVC']
+    pod 'CQDemoKit',          '~> 0.8.0',      :subspecs => ['BaseVC']
     
     pod 'CJPlayer',           :path => '../'
     pod 'CJMediaPlayer',      :path => '../'
     pod 'CJMediaCacheKit',    :path => '../'
     
-    pod 'MBProgressHUD'
+    pod 'MBProgressHUD',      '~> 0.9.2'
     
 #    pod 'TBPlayer',    '~> 1.0'
 

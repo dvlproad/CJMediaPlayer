@@ -7,7 +7,6 @@
 //
 
 #import "CJUIKitBaseTabBarViewController.h"
-#import "UIImage+CQDemoKit.h"
 
 @interface CJUIKitBaseTabBarViewController ()
 
@@ -64,7 +63,7 @@
     viewController.title = tabBarModel.title;
     viewController.navigationItem.title = tabBarModel.title;
     viewController.tabBarItem.title = tabBarModel.title;
-    viewController.tabBarItem.image = [[UIImage cqdemokit_xcassetImageNamed:@"icons8-calendar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    viewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-calendar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *rootViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
     return rootViewController;;
 }
